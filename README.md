@@ -58,6 +58,25 @@ Then in Android Studio:
 To build a shareable **APK** instead: Android Studio → *Build → Build Bundle(s) / APK(s)
 → Build APK(s)*. The APK lands in `android/app/build/outputs/apk/`.
 
+> **Changed the web code? Rebuild + sync before you deploy.** The phone loads
+> the web app from files baked into `android/app/src/main/assets/public/` (this
+> app has no live-reload `server.url`), and those are refreshed only by
+> `cap sync` — **not** by Android Studio's **Run ▶**, which only recompiles the
+> native shell. So after any change to `src/`, `public/` (including a saved
+> `lessons.json`), or after pulling a branch, run:
+>
+> ```bash
+> npm run build && npx cap sync android   # or just: npm run android
+> ```
+>
+> then press **Run ▶**. Pressing Run on its own re-flashes the old bundle, so
+> your changes won't show up. If it's still stale after syncing, uninstall the
+> app from the phone (to clear the WebView cache) and reinstall, or do
+> *Build → Clean Project* in Android Studio.
+>
+> For faster iteration you can instead live-reload from the dev server with
+> `npx cap run android -l --external` (don't ship that way).
+
 ---
 
 ## Add another course
