@@ -67,9 +67,6 @@ export function Lesson({ id, n }: { id: string; n: number }) {
         <h1 style={{ margin: "3px 0 0" }}>{lesson.title}</h1>
       </div>
 
-      {/* Slides are shown per section (inside the written lesson), not as one
-          top-level deck. */}
-
       {/* Practice: per-section written lesson + quiz, or one lecture quiz */}
       <PracticePanel
         key={activeLesson.n}

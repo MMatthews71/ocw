@@ -45,7 +45,7 @@ export function Course({ id }: { id: string }) {
               <div className="ico" style={{ color: "var(--accent)" }}>▦</div>
               <div className="rtext">
                 <div className="rtitle">Lessons</div>
-                <div className="rsub">{lessons.length} lessons · lecture, slides, code & readings, in order</div>
+                <div className="rsub">{lessons.length} lessons · written lessons + quizzes, in order</div>
               </div>
               <div className="chev">›</div>
             </a>

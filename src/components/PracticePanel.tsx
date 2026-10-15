@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import type { CourseManifest, Lesson } from "../types";
 import { loadBundledLesson } from "../lib/content";
 import { buildCombinedPrompt, buildSectionsPrompt, loadLessonTranscript, loadTimestampedTranscript } from "../lib/enrich";
-import { extractPdfBlocks, blocksToText, extractPdfPageTexts } from "../lib/pdftext";
+import { extractPdfBlocks, blocksToText } from "../lib/pdftext";
 import type { ProblemSet } from "../lib/problemset";
 import { clearProblemSet, getSavedProblemSet, parseCombined, parseSectioned, saveProblemSet } from "../lib/problemset";
 import { clearQuizProgress } from "../lib/quizprogress";
@@ -10,32 +10,6 @@ import { ProblemSetView } from "./ProblemSetView";
 import { SectionsView } from "./SectionsView";
 
 const filesUrl = (id: string, name: string) => `content/${id}/files/${name}`;
-
-// The lesson's lecture-slides file (the first PDF item, or a notes PDF), as a
-// basename under files/ — or null if the lesson has none.
-function slidesFileName(course: CourseManifest, lesson: Lesson): string | null {
-  const slideSlug = lesson.items.find((it) => it.kind === "pdf")?.slug;
-  return (slideSlug ? course.resources[slideSlug]?.file : lesson.notesPdf) || null;
-}
-
-// Pull the slides' text one page at a time, each marked "[slide N]", so the AI
-// can both reuse the slides' wording and map each section to a slide page range.
-// Returns the marked text + the page count, or null if there are no slides.
-async function loadSlidePages(
-  course: CourseManifest,
-  lesson: Lesson
-): Promise<{ text: string; pages: number } | null> {
-  const file = slidesFileName(course, lesson);
-  if (!file) return null;
-  try {
-    const pageTexts = await extractPdfPageTexts(filesUrl(course.id, file));
-    if (!pageTexts.some((t) => t.trim())) return null;
-    const text = pageTexts.map((t, i) => `[slide ${i + 1}] ${t}`.trim()).join("\n\n");
-    return { text, pages: pageTexts.length };
-  } catch {
-    return null;
-  }
-}
 
 // Lecture practice. For lectures with a timestamped transcript (video + captions)
 // the AI splits the lecture into topic SECTIONS, each with a small quiz you do as
@@ -104,11 +78,7 @@ export function PracticePanel({
         if (cancelled) return;
         if (ts) {
           setSectionsMode(true);
-          // Feed the lecture slides' text in too (page by page), so the written
-          // lesson can reuse the slides' wording and map sections to slide pages.
-          const slides = await loadSlidePages(course, lesson);
-          if (cancelled) return;
-          setPrompt(buildSectionsPrompt(course, lesson, ts, slides?.text ?? null, slides?.pages));
+          setPrompt(buildSectionsPrompt(course, lesson, ts));
           setStatus("ready");
           return;
         }
@@ -200,15 +170,13 @@ export function PracticePanel({
   }
 
   const hasSections = !!saved?.sections?.length;
-  const slidesFile = slidesFileName(course, lesson);
-  const slidesUrl = slidesFile ? filesUrl(course.id, slidesFile) : null;
 
   return (
     <div style={{ padding: "20px var(--gutter) 0" }}>
       {saved ? (
         <>
           {hasSections ? (
-            <SectionsView sections={saved.sections!} storageKeyBase={baseKey} slidesUrl={slidesUrl} />
+            <SectionsView sections={saved.sections!} storageKeyBase={baseKey} />
           ) : (
             <ProblemSetView ps={saved} storageKey={baseKey} />
           )}
