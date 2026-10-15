@@ -3,28 +3,27 @@ import type { PSSection } from "../lib/problemset";
 import { getQuizProgress, saveQuizProgress } from "../lib/quizprogress";
 import { ProblemSetView } from "./ProblemSetView";
 import { LessonText } from "./LessonText";
-import { SlidesSidebar } from "./SlidesSidebar";
 
 // One step of the lesson — its own page you flip between. Content pages (the
-// written lesson, with the section's slides + intro on the section's first one)
-// alternate with quiz pages (a single question): content → quiz → content → quiz.
+// written lesson, with the section's intro on the section's first one) alternate
+// with quiz pages (a single question): content → quiz → content → quiz.
 type Page =
   | { kind: "content"; si: number; qi: number; first: boolean }
   | { kind: "quiz"; si: number; qi: number; gi: number };
 
 // Flatten the sections into an ordered list of content/quiz pages.
-function buildPages(sections: PSSection[], hasSlides: boolean): Page[] {
+function buildPages(sections: PSSection[]): Page[] {
   const pages: Page[] = [];
   let gi = 0; // global question index, for stable per-question storage keys
   sections.forEach((s, si) => {
     const qs = s.ps.questions;
     if (!qs.length) {
-      if (s.body || (hasSlides && s.slideStart)) pages.push({ kind: "content", si, qi: -1, first: true });
+      if (s.body) pages.push({ kind: "content", si, qi: -1, first: true });
       return;
     }
     qs.forEach((q, qi) => {
       const first = qi === 0;
-      const hasContent = (first && (!!s.body || (hasSlides && !!s.slideStart))) || !!q.lesson;
+      const hasContent = (first && !!s.body) || !!q.lesson;
       if (hasContent) pages.push({ kind: "content", si, qi, first });
       pages.push({ kind: "quiz", si, qi, gi });
       gi++;
@@ -34,19 +33,16 @@ function buildPages(sections: PSSection[], hasSlides: boolean): Page[] {
 }
 
 // The lecture as a sequence of pages the student flips through: a content page
-// (written lesson, with the section's slides on its first page), then a quiz
-// page (one question), alternating. No video. Progress persists per question.
+// (written lesson), then a quiz page (one question), alternating. No video, no
+// slides. Progress persists per question.
 export function SectionsView({
   sections,
   storageKeyBase,
-  slidesUrl,
 }: {
   sections: PSSection[];
   storageKeyBase: string; // e.g. "<courseId>:<lessonN>"
-  slidesUrl?: string | null; // the lecture slides PDF, for per-section page ranges
 }) {
-  const hasSlides = !!slidesUrl;
-  const pages = buildPages(sections, hasSlides);
+  const pages = buildPages(sections);
   const total = pages.length;
 
   const navKey = `${storageKeyBase}:nav`;
@@ -100,13 +96,6 @@ export function SectionsView({
           {page.kind === "content" ? "Start quiz" : "Continue"}
         </button>
       </div>
-
-      {/* The section's slides live in a collapsible left sidebar — only while
-          reading a lesson (content) page, not during the quiz. Keyed per section
-          so it re-fits to that section's page range. */}
-      {page.kind === "content" && slidesUrl && s.slideStart && (
-        <SlidesSidebar key={`slides-${storageKeyBase}`} url={slidesUrl} scrollTo={s.slideStart} />
-      )}
     </div>
   );
 }

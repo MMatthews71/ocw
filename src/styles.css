@@ -19,7 +19,6 @@
   --radius: 12px;
   --maxw: 680px;
   --gutter: 20px;
-  --slides-w: min(340px, 46vw); /* width of the open slides sidebar */
   --safe-top: env(safe-area-inset-top, 0px);
   --safe-bottom: env(safe-area-inset-bottom, 0px);
 }
@@ -40,14 +39,6 @@ html, body {
 }
 
 a { color: var(--accent); text-decoration: none; }
-
-/* When the slides sidebar is open, give it the left strip and center the main
-   content in the remaining width (so it sits balanced, not overlaid). */
-.screen { transition: margin-left 0.2s ease; }
-body.slides-open .screen {
-  margin-left: calc(var(--slides-w) + (100vw - var(--slides-w) - min(var(--maxw), 100vw - var(--slides-w))) / 2);
-  margin-right: 0;
-}
 
 .screen {
   max-width: var(--maxw);
@@ -283,47 +274,6 @@ code, .mono { font-family: "SF Mono", "Cascadia Code", Consolas, "Roboto Mono", 
   color: var(--text); font: inherit; font-weight: 540; font-size: 15px; cursor: pointer;
 }
 .disclosure .chev { color: var(--faint); }
-
-/* ---------- slides sidebar ---------- */
-.slides-sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: var(--slides-w);
-  padding-top: var(--safe-top);
-  z-index: 900;
-  display: flex;
-  flex-direction: column;
-  background: var(--bg-elev);
-  border-right: 1px solid var(--border);
-  box-shadow: 3px 0 22px rgba(0, 0, 0, 0.4);
-}
-.slides-sidebar-head {
-  display: flex; align-items: center; justify-content: space-between;
-  padding: 10px 6px 10px 14px;
-  border-bottom: 1px solid var(--border);
-  font-size: 13px; font-weight: 540; color: var(--muted);
-  flex: none;
-}
-.slides-sidebar-head button {
-  background: none; border: none; color: var(--muted);
-  font-size: 18px; line-height: 1; padding: 6px 10px; cursor: pointer;
-}
-.slides-sidebar-body { flex: 1 1 auto; min-height: 0; }
-.slides-tab {
-  position: fixed;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 900;
-  display: flex; align-items: center; gap: 6px;
-  background: var(--bg-elev); color: var(--muted);
-  border: 1px solid var(--border); border-left: none;
-  border-radius: 0 10px 10px 0;
-  padding: 9px 11px; font-size: 14px; font-weight: 540; cursor: pointer;
-  box-shadow: 2px 0 12px rgba(0, 0, 0, 0.25);
-}
 
 /* ---------- pdf ---------- */
 .pdf-toolbar { display: flex; align-items: center; gap: 10px; justify-content: space-between; padding: 8px 2px; color: var(--muted); font-size: 13px; }

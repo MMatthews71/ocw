@@ -23,9 +23,7 @@ export interface PSQuestion {
 export interface PSSection {
   title: string;
   start: number; // seconds into the video where this section begins (legacy; unused now that sections are read, not watched)
-  body: string; // the written lesson for this section — clear, concise prose from the transcript + slides
-  slideStart?: number; // 1-based first slide page for this section (inclusive)
-  slideEnd?: number; // 1-based last slide page for this section (inclusive)
+  body: string; // the written lesson for this section — clear, concise prose from the transcript
   ps: ProblemSet; // the small quiz for this section
 }
 
@@ -264,33 +262,15 @@ export function parseSectioned(input: string): { ok: boolean; error?: string; se
     return 0;
   };
 
-  // A 1-based slide page number from various shapes (number, "3", "p3").
-  const parsePage = (v: unknown): number | undefined => {
-    if (typeof v === "number" && isFinite(v)) return Math.max(1, Math.floor(v));
-    if (typeof v === "string") {
-      const n = parseInt(v.replace(/[^0-9]/g, ""), 10);
-      if (!isNaN(n)) return Math.max(1, n);
-    }
-    return undefined;
-  };
-
   const sections: PSSection[] = [];
   for (const s of arr) {
     const ps = toProblemSet(s);
     if (!ps) continue;
     const bodyRaw = s?.body ?? s?.lesson ?? s?.content ?? s?.notes ?? s?.text;
-    // Slide range: a {start,end} object, {from,to}, or flat slideStart/slideEnd.
-    const slides = s?.slides ?? s?.slideRange ?? null;
-    let slideStart = parsePage(s?.slideStart ?? slides?.start ?? slides?.from ?? slides?.first);
-    let slideEnd = parsePage(s?.slideEnd ?? slides?.end ?? slides?.to ?? slides?.last);
-    if (slideStart && slideEnd && slideEnd < slideStart) [slideStart, slideEnd] = [slideEnd, slideStart];
-    if (slideStart && !slideEnd) slideEnd = slideStart;
     sections.push({
       title: typeof s?.title === "string" && s.title.trim() ? s.title.trim() : `Section ${sections.length + 1}`,
       start: parseStart(s?.start),
       body: typeof bodyRaw === "string" ? bodyRaw.trim() : "",
-      slideStart,
-      slideEnd,
       ps,
     });
   }

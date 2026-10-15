@@ -121,57 +121,49 @@ export async function loadTimestampedTranscript(
 
 // Build a prompt that turns the lecture into a READABLE written lesson, split
 // into topic SECTIONS. Each section carries a clear, concise write-up of that
-// part of the lecture (using the lecturer's and slides' own wording wherever it
-// can), the slide page range it covers, and a small quiz — the student reads
-// the section, then does its quiz, in place of watching the video.
-// Reply: { lecture: { sections: [{title, body, slides:{start,end}, questions}] } }.
+// part of the lecture, interleaved with a small quiz — the student reads a
+// chunk, then answers a question, in place of watching the video. The lesson
+// must stand on its own in words: there are no slides, no video and no images,
+// and it teaches the subject itself, not the course.
+// Reply: { lecture: { sections: [{title, body, questions}] } }.
 export function buildSectionsPrompt(
   course: CourseManifest,
   lesson: Lesson,
-  tsTranscript: string,
-  slidesText?: string | null,
-  slidePageCount?: number
+  tsTranscript: string
 ): string {
   const courseName = [course.number, course.title].filter(Boolean).join(" ");
   let t = tsTranscript;
   if (t.length > MAX_TRANSCRIPT_CHARS) t = t.slice(0, MAX_TRANSCRIPT_CHARS) + "\n[Transcript truncated for length.]";
 
-  const hasSlides = !!(slidesText && slidesText.trim());
-  const slidesBody = hasSlides
-    ? `\n\n--- LECTURE ${lesson.n} SLIDES (extracted text, one page marked [slide N]) ---\n` +
-      (slidesText!.length > MAX_TRANSCRIPT_CHARS ? slidesText!.slice(0, MAX_TRANSCRIPT_CHARS) + "\n[Slides truncated for length.]" : slidesText!) +
-      `\n--- END SLIDES ---`
-    : "";
-
-  // Line describing the per-section slide range (only when slides are present).
-  const slideFieldDoc = hasSlides
-    ? `- "slides": the slide page range this section covers, as { "start": N, "end": M } using the ` +
-      `[slide N] page numbers from the slides below (1-based, inclusive). The deck has ${slidePageCount ?? "several"} ` +
-      `slides. Assign each slide to exactly one section; ranges must be in order and together cover all ` +
-      `slides from 1 to ${slidePageCount ?? "the last"} with no gaps or overlaps. A section with no matching ` +
-      `slides may repeat the previous section's last page.\n`
-    : "";
-  const slideSchemaInExample = hasSlides ? `"slides": { "start": 1, "end": 3 }, ` : "";
-
   return (
-    `You are an expert tutor for ${courseName}.\n\n` +
-    `Below is the timestamped transcript of "Lecture ${lesson.n}: ${lesson.title}"` +
-    `${hasSlides ? ", followed by the text of its lecture slides (each page marked [slide N])" : ""}. ` +
+    `You are an expert tutor teaching the topics from ${courseName}.\n\n` +
+    `Below is the timestamped transcript of "Lecture ${lesson.n}: ${lesson.title}". ` +
     `Time markers appear inline in the transcript as [t=SECONDS].\n\n` +
     `Rewrite this lecture as a clear, concise WRITTEN LESSON a student can read instead of watching ` +
     `the video. Split it into 5–8 coherent SECTIONS by topic, in the order the lecture covers them.\n\n` +
+    `NO VISUALS — the student only READS this lesson. There is no video, no slides and no images, so ` +
+    `write every section to stand completely on its own in words. Never refer to a slide, a figure, a ` +
+    `diagram, the board, an animation, "as shown", "as you can see", "pictured", "on screen", "here" or ` +
+    `anything the reader cannot see. If the lecture leaned on a diagram, table, plot or on-screen ` +
+    `example to make a point, reconstruct it IN WORDS — describe it, or lay it out as a small text/ASCII ` +
+    `table or a fenced example — so the idea is fully clear without the picture.\n\n` +
+    `TEACH THE SUBJECT, NOT THE COURSE. Write it as a standalone tutorial on the topic. Leave out ` +
+    `everything about the class as a class: do not mention the course, the lecture or its number, the ` +
+    `semester, the syllabus, problem sets or assignments (or their being due), quizzes, exams, grading, ` +
+    `office hours, the textbook or reading schedule, "in this class/lecture we will…", "today/last ` +
+    `time", "for homework", or the lecturer ("he said", "the professor", "we"). Do not address the ` +
+    `reader as an enrolled student. Just explain the ideas directly.\n\n` +
     `IMPORTANT — interleave the lesson with the quiz. Within a section, do NOT put the whole lesson ` +
     `first and the questions after. Instead break the section's teaching into chunks and attach each ` +
     `chunk to the question it sets up, so the student reads a bit, answers a question, reads the next ` +
     `bit, answers the next question, and so on: lesson chunk → question → lesson chunk → question.\n\n` +
     `For each section give:\n` +
-    `- "title": a short topic title for that part of the lecture\n` +
+    `- "title": a short topic title for that part of the lesson\n` +
     `- "body": a SHORT intro, 1–2 sentences, that sets up the section before its first question. The ` +
     `bulk of the teaching goes in each question's "lesson" field, not here. May be omitted if the first ` +
     `question's "lesson" already stands on its own.\n` +
-    slideFieldDoc +
     `- "questions": 2–4 questions that, in order, build on this section — a mix of "mcq", "short", and ` +
-    `"code" (use "code" when that part of the lecture is about writing code).\n` +
+    `"code" (use "code" when that part of the lesson is about writing code).\n` +
     `  These questions must make the student APPLY the idea, NOT recall it. Each one should put the ` +
     `concept to work in a NEW situation that is not stated in the lesson: a fresh example, different ` +
     `numbers or inputs, an edge case, a short scenario, a "what happens if…", a comparison of two ` +
@@ -183,21 +175,21 @@ export function buildSectionsPrompt(
     `the idea and test it on inputs/cases the lesson never showed.\n` +
     `  Each question object ALSO includes:\n` +
     `    - "lesson": the chunk of written lesson the student reads RIGHT BEFORE this question — the ` +
-    `part of the lecture that teaches the idea the question then asks them to apply. Together, the sections' bodies and ` +
+    `part of the material that teaches the idea the question then asks them to apply. Together, the sections' bodies and ` +
     `the questions' "lesson" chunks, in order, make up the whole written lesson. Rules for every ` +
     `"lesson" chunk (and "body"):\n` +
     `        • Rewrite the spoken lecture into clean, concise WRITTEN prose — the way a good textbook ` +
     `would put it. Keep exactly the same content: the same points in the same order, the same specific ` +
     `examples (the actual foods, names, numbers), the same technical terms and definitions, and any ` +
-    `code verbatim. But do NOT keep his spoken, sentence-by-sentence phrasing: turn rambling, ` +
+    `code verbatim. But do NOT keep the spoken, sentence-by-sentence phrasing: turn rambling, ` +
     `conversational or repetitive speech (e.g. "A tree is basically a kind of graph. Here you have a ` +
     `root and then children of the root…") into tight written sentences that say the same thing.\n` +
     `        • Cut what only works out loud: false starts, "um/so/okay/basically/you know", asides, ` +
     `self-corrections, and repetition. Do NOT lose any real content — every idea, step, example and ` +
-    `result he states must still be there, just said more cleanly and compactly.\n` +
-    `        • Do NOT add facts, claims, or examples that are not in the transcript or slides. No outside knowledge.\n` +
+    `result stated must still be there, just said more cleanly and compactly.\n` +
+    `        • Do NOT add facts, claims, or examples that are not in the transcript. No outside knowledge.\n` +
     `        • Format for easy reading: short paragraphs with a blank line between them; "- " bullet ` +
-    `lines for lists and steps (mirror the slides' bullets); bold the key terms with **…**; and when a ` +
+    `lines for lists and steps; bold the key terms with **…**; and when a ` +
     `chunk covers two or three distinct ideas, you may separate them with a short "## Subheading". Put ` +
     `any code in a \`\`\` fenced block. Use \\n for line breaks and \\n\\n between paragraphs in the JSON string.\n` +
     `        • Math is rendered with LaTeX (KaTeX), so WRITE REAL LaTeX. Wrap inline math in $…$ and a ` +
@@ -219,15 +211,14 @@ export function buildSectionsPrompt(
     `{\n` +
     `  "lecture": {\n` +
     `    "sections": [\n` +
-    `      { "title": "section topic", "body": "short intro", ${slideSchemaInExample}"questions": [ { "lesson": "lesson chunk before this question", /* ...question fields... */ } ] }\n` +
+    `      { "title": "section topic", "body": "short intro", "questions": [ { "lesson": "lesson chunk before this question", /* ...question fields... */ } ] }\n` +
     `    ]\n` +
     `  }\n` +
     `}\n` +
     `Each question object in any "questions" array uses this schema (plus the "lesson" field above):\n` +
     questionSchemaDoc() +
-    `\n\nSections MUST be in the lecture's order and based ONLY on the transcript and slides below.\n\n` +
-    `--- LECTURE ${lesson.n} TIMESTAMPED TRANSCRIPT ---\n${t}\n--- END TRANSCRIPT ---` +
-    slidesBody
+    `\n\nSections MUST be in the lecture's order and based ONLY on the transcript below.\n\n` +
+    `--- LECTURE ${lesson.n} TIMESTAMPED TRANSCRIPT ---\n${t}\n--- END TRANSCRIPT ---`
   );
 }
 
@@ -249,9 +240,6 @@ export function buildCombinedPrompt(
   problemSets: PromptProblemSet[]
 ): string {
   const courseName = [course.number, course.title].filter(Boolean).join(" ");
-  const readingLine = lesson.reading
-    ? ` Suggested readings for this lecture: ${lesson.reading}.`
-    : "";
   const hasPS = problemSets.length > 0;
 
   const clip = (s: string, label: string) => {
@@ -288,8 +276,7 @@ export function buildCombinedPrompt(
     `what the lecture actually covered. Vary the difficulty: include some straightforward ` +
     `recall/understanding questions, but make a solid share of them genuinely challenging — ` +
     `questions that require applying the ideas, reasoning about edge cases or trade-offs, ` +
-    `multi-step problems, or harder code exercises — so a strong student is still pushed.` +
-    `${readingLine}\n` +
+    `multi-step problems, or harder code exercises — so a strong student is still pushed.\n` +
     (hasPS
       ? `2. PROBLEM SET QUESTIONS: for each problem set handout below, convert its REAL tasks into ` +
         `answerable questions — keep the same scenario and intent (the specific functions, algorithms ` +
@@ -298,6 +285,14 @@ export function buildCombinedPrompt(
         `questions, and a few "mcq" for the key ideas. Cover the handout's parts in order.\n`
       : "") +
     `\n` +
+    `NO VISUALS — the student only reads text and answers questions; there is no video, no slides and ` +
+    `no images. Make every question and its explanation stand on its own in words: never refer to a ` +
+    `slide, figure, diagram, the board, "as shown", "as you can see", or anything the reader cannot ` +
+    `see. If an idea needs a diagram or table, put it into words (or a small text/ASCII table).\n` +
+    `TEACH THE SUBJECT, NOT THE COURSE. Focus only on the actual concepts and skills. Leave out ` +
+    `anything about the class as a class: no mention of the course, lecture number, semester, syllabus, ` +
+    `assignments/problem sets being due, exams, grading, office hours, reading schedule, "in this ` +
+    `class/lecture", "last time", or the lecturer. Do not address the reader as an enrolled student.\n\n` +
     `All "code" questions run in a sandboxed Python (Pyodide): standard library only, no input(), ` +
     `and NO file or network access. If a task reads a provided data file (e.g. a .txt/.csv), adapt it ` +
     `so the needed data is passed as a literal argument or defined inline in the test calls — never ` +
