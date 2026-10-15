@@ -1,0 +1,1940 @@
+{
+  "id": "6-0002-fall-2016",
+  "title": "Introduction to Computational Thinking and Data Science",
+  "number": "6.0002",
+  "term": "Fall",
+  "year": "2016",
+  "level": "Undergraduate",
+  "descriptionHtml": "6.0002 is the continuation of <em><a href=\"https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/\" target=\"_blank\" rel=\"noopener\">6.0001 Introduction to Computer Science and Programming in Python</a></em> and is intended for students with little or no programming experience. It aims to provide students with an understanding of the role computation can play in solving problems and to help students, regardless of their major, feel justifiably confident of their ability to write small programs that allow them to accomplish useful goals. The class uses the Python 3.5 programming language.",
+  "image": "content/6-0002-fall-2016/files/d9b969b1e9e2029d7e9b9e2c9324dde4_6-0002f16.jpg",
+  "instructors": [
+    "Prof. Eric Grimson",
+    "Prof. John Guttag",
+    "Dr. Ana Bell"
+  ],
+  "topics": [
+    "Computer Science",
+    "Probability and Statistics"
+  ],
+  "learningResourceTypes": [
+    "Lecture Videos",
+    "Problem Sets",
+    "Lecture Notes",
+    "Programming Assignments"
+  ],
+  "lessons": [
+    {
+      "n": 1,
+      "title": "Introduction and Optimization Problems",
+      "video": "lecture-1-introduction-and-optimization-problems",
+      "reading": "Chapter 12.1, Chapter 5.4",
+      "items": [
+        {
+          "slug": "mit6_0002f16_lec1",
+          "kind": "pdf",
+          "label": "Lecture 1: Introduction and Optimization Problems (PDF)"
+        },
+        {
+          "slug": "lecture1",
+          "kind": "archive",
+          "label": "Additional Files for Lecture 1 (ZIP)"
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "title": "Optimization Problems",
+      "video": "lecture-2-optimization-problems",
+      "reading": "Chapter 13",
+      "items": [
+        {
+          "slug": "mit6_0002f16_lec2",
+          "kind": "pdf",
+          "label": "Lecture 2: Optimization Problems (PDF - 6.9MB)"
+        },
+        {
+          "slug": "additional-files-for-lecture-2",
+          "kind": "archive",
+          "label": "Additional Files for Lecture 2 (ZIP)"
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "title": "Graph-theoretic Models",
+      "video": "lecture-3-graph-theoretic-models",
+      "reading": "Chapter 12.2",
+      "items": [
+        {
+          "slug": "mit6_0002f16_lec3",
+          "kind": "pdf",
+          "label": "Lecture 3: Graph-theoretic Models (PDF)"
+        },
+        {
+          "slug": "lecturegraphspy",
+          "kind": "code",
+          "label": "Code File for Lecture 3 (PY)"
+        }
+      ]
+    },
+    {
+      "n": 4,
+      "title": "Stochastic Thinking",
+      "video": "lecture-4-stochastic-thinking",
+      "reading": "Chapter 14",
+      "items": [
+        {
+          "slug": "mit6_0002f16_lec4",
+          "kind": "pdf",
+          "label": "Lecture 4: Stochastic Thinking (PDF)"
+        },
+        {
+          "slug": "lecture4py",
+          "kind": "code",
+          "label": "Code File for Lecture 4 (PY)"
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "title": "Random Walks",
+      "video": "lecture-5-random-walks",
+      "reading": "Chapter 11, Chapter 14",
+      "items": [
+        {
+          "slug": "mit6_0002f16_lec5",
+          "kind": "pdf",
+          "label": "Lecture 5: Random Walks (PDF)"
+        },
+        {
+          "slug": "lect5",
+          "kind": "code",
+          "label": "Code File for Lecture 5 (PY)"
+        }
+      ]
+    },
+    {
+      "n": 6,
+      "title": "Monte Carlo Simulation",
+      "video": "lecture-6-monte-carlo-simulation",
+      "reading": "Chapter 15.1–15.4, Chapter 16",
+      "items": [
+        {
+          "slug": "mit6_0002f16_lec6",
+          "kind": "pdf",
+          "label": "Lecture 6: Monte Carlo Simulation (PDF - 1.2MB)"
+        },
+        {
+          "slug": "lect6py",
+          "kind": "code",
+          "label": "Code File for Lecture 6 (PY)"
+        }
+      ]
+    },
+    {
+      "n": 7,
+      "title": "Confidence Intervals",
+      "video": "lecture-7-confidence-intervals",
+      "reading": "Chapter 16.4, Chapter 17",
+      "items": [
+        {
+          "slug": "mit6_0002f16_lec7",
+          "kind": "pdf",
+          "label": "Lecture 7: Confidence Intervals (PDF)"
+        },
+        {
+          "slug": "lect7py",
+          "kind": "code",
+          "label": "Code File for Lecture 7 (PY)"
+        }
+      ]
+    },
+    {
+      "n": 8,
+      "title": "Sampling and Standard Error",
+      "video": "lecture-8-sampling-and-standard-error",
+      "reading": "Chapter 17",
+      "items": [
+        {
+          "slug": "mit6_0002f16_lec8",
+          "kind": "pdf",
+          "label": "Lecture 8: Sampling and Standard Error (PDF - 1.3MB)"
+        },
+        {
+          "slug": "additional-files-for-lecture-8",
+          "kind": "archive",
+          "label": "Additional Files for Lecture 8 (ZIP - 1.6MB)"
+        }
+      ]
+    },
+    {
+      "n": 9,
+      "title": "Understanding Experimental Data",
+      "video": "lecture-9-understanding-experimental-data",
+      "reading": "Chapter 18",
+      "items": [
+        {
+          "slug": "mit6_0002f16_lec9",
+          "kind": "pdf",
+          "label": "Lecture 9: Understanding Experimental Data (PDF)"
+        },
+        {
+          "slug": "additional-files-for-lecture-9",
+          "kind": "archive",
+          "label": "Additional Files for Lecture 9 (ZIP)"
+        }
+      ]
+    },
+    {
+      "n": 10,
+      "title": "Understanding Experimental Data (cont.)",
+      "video": "lecture-10-understanding-experimental-data-cont",
+      "reading": "Chapter 18",
+      "items": [
+        {
+          "slug": "mit6_0002f16_lec10",
+          "kind": "pdf",
+          "label": "Lecture 10: Understanding Experimental Data (cont.) (PDF - 1.3MB)"
+        },
+        {
+          "slug": "additional-files-for-lecture-10",
+          "kind": "archive",
+          "label": "Additional Files for Lecture 10 (ZIP - 1.7MB)"
+        }
+      ]
+    },
+    {
+      "n": 11,
+      "title": "Introduction to Machine Learning",
+      "video": "lecture-11-introduction-to-machine-learning",
+      "reading": "Chapter 22",
+      "items": [
+        {
+          "slug": "mit6_0002f16_lec11",
+          "kind": "pdf",
+          "label": "Lecture 11: Introduction to Machine Learning (PDF - 1.1MB)"
+        },
+        {
+          "slug": "lecturecodepy",
+          "kind": "code",
+          "label": "Code File for Lecture 11 (PY)"
+        }
+      ]
+    },
+    {
+      "n": 12,
+      "title": "Clustering",
+      "video": "lecture-12-clustering",
+      "reading": "Chapter 23",
+      "items": [
+        {
+          "slug": "mit6_0002f16_lec12",
+          "kind": "pdf",
+          "label": "Lecture 12: Clustering (PDF)"
+        },
+        {
+          "slug": "additional-files-for-lecture-12",
+          "kind": "archive",
+          "label": "Additional Files for Lecture 12 (ZIP)"
+        }
+      ]
+    },
+    {
+      "n": 13,
+      "title": "Classification",
+      "video": "lecture-13-classification",
+      "reading": "Chapter 24",
+      "items": [
+        {
+          "slug": "mit6_0002f16_lec13",
+          "kind": "pdf",
+          "label": "Lecture 13: Classification (PDF)"
+        },
+        {
+          "slug": "additional-files-for-lecture-13",
+          "kind": "archive",
+          "label": "Additional Files for Lecture 13 (ZIP)"
+        }
+      ]
+    },
+    {
+      "n": 14,
+      "title": "Classification and Statistical Sins",
+      "video": "lecture-14-classification-and-statistical-sins",
+      "reading": "Chapter 21",
+      "items": [
+        {
+          "slug": "mit6_0002f16_lec14",
+          "kind": "pdf",
+          "label": "Lecture 14: Classification and Statistical Sins (PDF)"
+        },
+        {
+          "slug": "additional-files-for-lecture-14",
+          "kind": "archive",
+          "label": "Additional Files for Lecture 14 (ZIP)"
+        }
+      ]
+    },
+    {
+      "n": 15,
+      "title": "Statistical Sins and Wrap Up",
+      "video": "lecture-15-statistical-sins-and-wrap-up",
+      "reading": "Chapter 21",
+      "items": [
+        {
+          "slug": "mit6_0002f16_lec15",
+          "kind": "pdf",
+          "label": "Lecture 15: Statistical Sins and Wrap Up (PDF - 1.1MB)"
+        },
+        {
+          "slug": "lect15py",
+          "kind": "code",
+          "label": "Code File for Lecture 15 (PY)"
+        }
+      ]
+    }
+  ],
+  "problemSets": [
+    {
+      "slug": "ps1",
+      "title": "Problem Set 1: Space Cows Transportation",
+      "kind": "archive",
+      "archive": "687c3ee2bee6229f46968d366a92345e_PS1.zip",
+      "number": 1,
+      "lessons": [
+        1,
+        2
+      ],
+      "pdf": "assignments/ps1/MIT6_0002F16_ProblemSet1.pdf",
+      "files": [
+        {
+          "name": "assignments/ps1/ps1_partition.py",
+          "label": "ps1_partition.py",
+          "kind": "code"
+        },
+        {
+          "name": "assignments/ps1/ps1a.py",
+          "label": "ps1a.py",
+          "kind": "code"
+        },
+        {
+          "name": "assignments/ps1/ps1b.py",
+          "label": "ps1b.py",
+          "kind": "code"
+        },
+        {
+          "name": "assignments/ps1/ps1_cow_data_2.txt",
+          "label": "ps1_cow_data_2.txt",
+          "kind": "data"
+        },
+        {
+          "name": "assignments/ps1/ps1_cow_data.txt",
+          "label": "ps1_cow_data.txt",
+          "kind": "data"
+        }
+      ]
+    },
+    {
+      "slug": "ps2",
+      "title": "Problem Set 2: Fastest Way to Get Around MIT",
+      "kind": "archive",
+      "archive": "a03ae7bf25e1cd1349fc81df23952509_PS2.zip",
+      "number": 2,
+      "lessons": [
+        3
+      ],
+      "pdf": "assignments/ps2/MIT6_0002F16_ProblemSet2.pdf",
+      "files": [
+        {
+          "name": "assignments/ps2/graph.py",
+          "label": "graph.py",
+          "kind": "code"
+        },
+        {
+          "name": "assignments/ps2/ps2.py",
+          "label": "ps2.py",
+          "kind": "code"
+        },
+        {
+          "name": "assignments/ps2/mit_map.txt",
+          "label": "mit_map.txt",
+          "kind": "data"
+        }
+      ]
+    },
+    {
+      "slug": "ps3",
+      "title": "Problem Set 3: Robot Simulation",
+      "kind": "archive",
+      "archive": "ccc304c1ea4ee213b2846f1ec1fc01f8_PS3.zip",
+      "number": 3,
+      "lessons": [
+        4,
+        5,
+        6
+      ],
+      "pdf": "assignments/ps3/MIT6_0002F16_ProblemSet3.pdf",
+      "files": [
+        {
+          "name": "assignments/ps3/ps3_tests_f16.py",
+          "label": "ps3_tests_f16.py",
+          "kind": "code"
+        },
+        {
+          "name": "assignments/ps3/ps3_verify_movement27.py",
+          "label": "ps3_verify_movement27.py",
+          "kind": "code"
+        },
+        {
+          "name": "assignments/ps3/ps3_visualize.py",
+          "label": "ps3_visualize.py",
+          "kind": "code"
+        },
+        {
+          "name": "assignments/ps3/ps3.py",
+          "label": "ps3.py",
+          "kind": "code"
+        },
+        {
+          "name": "assignments/ps3/ps3_verify_movement27.cpython-35.pyc",
+          "label": "ps3_verify_movement27.cpython-35.pyc",
+          "kind": "other"
+        },
+        {
+          "name": "assignments/ps3/ps3_visualize.cpython-35.pyc",
+          "label": "ps3_visualize.cpython-35.pyc",
+          "kind": "other"
+        },
+        {
+          "name": "assignments/ps3/ps3.cpython-35.pyc",
+          "label": "ps3.cpython-35.pyc",
+          "kind": "other"
+        },
+        {
+          "name": "assignments/ps3/test.pyc",
+          "label": "test.pyc",
+          "kind": "other"
+        }
+      ]
+    },
+    {
+      "slug": "ps4",
+      "title": "Problem Set 4: Simulating the Spread of Disease and Bacteria Population",
+      "kind": "archive",
+      "archive": "f6b48ebba57fc33e9cb7e815abf8f407_PS4.zip",
+      "number": 4,
+      "lessons": [
+        6,
+        7,
+        8
+      ],
+      "pdf": "assignments/ps4/MIT6_0002F16_ProblemSet4.pdf",
+      "files": [
+        {
+          "name": "assignments/ps4/ps4_tests.py",
+          "label": "ps4_tests.py",
+          "kind": "code"
+        },
+        {
+          "name": "assignments/ps4/ps4.py",
+          "label": "ps4.py",
+          "kind": "code"
+        }
+      ]
+    },
+    {
+      "slug": "ps5",
+      "title": "Problem Set 5: Modeling Global Warming",
+      "kind": "archive",
+      "archive": "f5682c4bfaad90428a6e9fd82c66b27a_PS5.zip",
+      "number": 5,
+      "lessons": [
+        9,
+        10
+      ],
+      "pdf": "assignments/ps5/MIT6_0002F16_ProblemSet5.pdf",
+      "files": [
+        {
+          "name": "assignments/ps5/ps5_test.py",
+          "label": "ps5_test.py",
+          "kind": "code"
+        },
+        {
+          "name": "assignments/ps5/ps5.py",
+          "label": "ps5.py",
+          "kind": "code"
+        },
+        {
+          "name": "assignments/ps5/data.csv",
+          "label": "data.csv",
+          "kind": "data"
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "slug": "syllabus",
+      "title": "Syllabus",
+      "kind": "page",
+      "contentHtml": "\n    <h3 id=\"course-meeting-times\">Course Meeting Times</h3>\n\n<p>Lectures: 2 sessions / week, 1 hour / session</p>\n<p>Recitations: 1 sessions / week, 1 hour / session</p>\n\n    <h3 id=\"prerequisites\">Prerequisites</h3>\n\n<p><a     href=\"https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/\"  ><em>6.0001 Introduction to Computer Science and Programming in Python</em></a> or permission of the instructor.</p>\n\n    <h3 id=\"course-information\">Course Information</h3>\n\n<p>This subject is aimed at students with little or no programming experience. It aims to provide students with an understanding of the role computation can play in solving problems. It also aims to help students, regardless of their major, to feel justifiably confident of their ability to write small programs that allow them to accomplish useful goals. The class will use the Python programming language.</p>\n\n    <h3 id=\"note-on-60001-60002-and-600\"><em>Note on 6.0001, 6.0002 and 6.00</em></h3>\n\n<ul>\n<li>6.0001 (6 units): First half of term</li>\n<li>6.0002 (6 units): Second half of term</li>\n<li>6.00 (12 units): Full term</li>\n</ul>\n<p>6.00 satisfies all degree / minor requirements that can be satisfied by taking both 6.0001 and 6.0002.</p>\n<p>Students taking 6.00 will attend the 6.0001 and 6.0002 lectures and do the problem set for 6.0001 and 6.0002. The 6.0001 final will serve as a 6.00 midterm. The 6.0002 final will serve as the 6.00 final.</p>\n<p>OCW has additional versions of 6.00 that include useful materials; this course will closely parallell the material covered in these versions:</p>\n<ul>\n<li><a     href=\"https://ocw.mit.edu/courses/6-00sc-introduction-to-computer-science-and-programming-spring-2011/\"  ><em>6.00SC Introduction to Computer Science and Programming</em></a></li>\n<li><a     href=\"https://ocw.mit.edu/courses/6-00-introduction-to-computer-science-and-programming-fall-2008/\"  ><em>6.00 Introduction to Computer Science and Programming</em></a></li>\n</ul>\n\n    <h3 id=\"goals\">Goals</h3>\n\n<ul>\n<li>Provide an understanding of the role computation can play in solving problems.</li>\n<li>Help students, including those who do not necessarily plan to major in Computer Science and Electrical Engineering, feel confident of their ability to write small programs that allow them to accomplish useful goals.</li>\n<li>Position students so that they can compete for research projects and excel in subjects with programming components.</li>\n</ul>\n\n    <h3 id=\"textbook\">Textbook</h3>\n\n<p>The textbook is Guttag, John. <a   class=\"external-link \"   target=\"_blank\"   href=\"https://mitpress.mit.edu/9780262529624/introduction-to-computation-and-programming-using-python/\"  aria-label=\"Introduction to Computation and Programming Using Python: With Application to Understanding Data (opens in a new tab)\"  ><em>Introduction to Computation and Programming Using Python: With Application to Understanding Data</em></a>. 2nd ed. MIT Press, 2016. ISBN: 9780262529624. [Preview with <a   class=\"external-link \"   target=\"_blank\"   href=\"http://books.google.com/books?id=KabKDAAAQBAJ&amp;pg=PAfrontcover\"  aria-label=\"Google Books (opens in a new tab)\"  >Google Books</a>] The book and the course lectures parallel each other, though there is more detail in the book about some topics. It is available both in hard copy and as an e-book.</p>\n\n    <h3 id=\"lecture-and-recitation-attendance\">Lecture and Recitation Attendance</h3>\n\n<p>A significant portion of the material for this course will presented only in lecture, so students are expected to regularly attend lectures.</p>\n<p>Recitations give students a chance to ask questions about the lecture material or the problem set for the given week. Sometimes, new material may be covered in recitation. Recitation attendance is encouraged but not required.</p>\n\n    <h3 id=\"problem-sets-and-final-exam\">Problem Sets and Final Exam</h3>\n\n<p>Each problem set will involve programming in Python. There will be 5 problem sets in the course.</p>\n<p>There will be one final exam. The exam is open book / notes but <strong>not</strong> open Internet and <strong>not</strong> open computer. Please print whatever you may want to use during the quiz.</p>\n\n    <h3 id=\"grading-policy\">Grading Policy</h3>\n\n<p>Grades will be roughly computed as follows:</p>\n<p><table>\n<thead>\n<tr>\n<th>\n\nACTIVITIES\n</th>\n<th>\n\nPERCENTAGES\n</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>\n\nProblem sets\n</td>\n<td>\n\n50%\n</td>\n</tr>\n<tr>\n<td>\n\nCompletion of mandatory finger exercises\n</td>\n<td>\n\n10%\n</td>\n</tr>\n<tr>\n<td>\n\nFinal Exam\n</td>\n<td>\n\n40%\n</td>\n</tr>\n</tbody>\n</table>\n</p>\n<p>Problem sets will be graded out of 10 points. Submissions that do not run will receive at most 20% of the points.</p>\n<p><em>Note: Finger exercises are not available on OCW.</em></p>\n\n    <h3 id=\"extension-and-dropping-problem-sets-policy\">Extension and Dropping Problem Sets Policy</h3>\n\n<p>We do not grant any extensions. Instead, we offer late days and the option of rolling at most 2 problem set grades into the final exam score.</p>\n\n    <h4 id=\"late-days\">Late Days</h4>\n\n<p>At the beginning of the term, students are given two late days that they can use on problem sets. Starting with Problem Set 1, additional late days can be accumulated for each assignment, one late day for each day the assignment is turned in ahead of the deadline. Up to three late days may be accumulated in this fashion in this course, i.e., you can only have a maximum of 3 late days at any point in time. Late days are discrete (a student cannot use half a late day). The staff will keep track of late days and feedback for each problem set will include the number of late days the student has remaining. Any additional late work beyond these late days will not be accepted. To avoid surprises, we suggest that after you submit your problem set, you double check to make sure the submission was uploaded correctly.</p>\n\n    <h4 id=\"rolling-over-problem-sets\">Rolling Over Problem Sets</h4>\n\n<p>As we assign final grades, we will maximize your score based on the choice to roll the weight of at most two problem sets into your final exam score. If rolled, the percent that the problem sets are worth will be rolled into the final exam score. We strongly urge you to see the late days and dropping the problem sets as backup in case of an emergency. Your best strategy is to do the problem sets early before work starts to pile up.</p>\n\n    <h3 id=\"calendar\">Calendar</h3>\n\n<p><table>\n<thead>\n<tr>\n<th>\n\nSES #\n</th>\n<th>\n\nTOPICS\n</th>\n<th>\n\nKEY DATES\n</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>\n\n1\n</td>\n<td>\n\nIntroduction and Optimization Problems\n</td>\n<td>\n\nProblem set 1 out\n</td>\n</tr>\n<tr>\n<td>\n\n2\n</td>\n<td>\n\nOptimization Problems\n</td>\n<td>\n\n \n</td>\n</tr>\n<tr>\n<td>\n\n3\n</td>\n<td>\n\nGraph-theoretic Models\n</td>\n<td>\n\n \n</td>\n</tr>\n<tr>\n<td>\n\n4\n</td>\n<td>\n\nStochastic Thinking\n</td>\n<td>\n\nProblem set 1 due  <br>\nProblem set 2 out\n</td>\n</tr>\n<tr>\n<td>\n\n5\n</td>\n<td>\n\nRandom Walks\n</td>\n<td>\n\n \n</td>\n</tr>\n<tr>\n<td>\n\n6\n</td>\n<td>\n\nMonte Carlo Simulation\n</td>\n<td>\n\nProblem set 2 due  <br>\nProblem set 3 out\n</td>\n</tr>\n<tr>\n<td>\n\n7\n</td>\n<td>\n\nConfidence Intervals\n</td>\n<td>\n\n \n</td>\n</tr>\n<tr>\n<td>\n\n8\n</td>\n<td>\n\nSampling and Standard Error\n</td>\n<td>\n\nProblem set 3 due  <br>\nProblem set 4 out\n</td>\n</tr>\n<tr>\n<td>\n\n9\n</td>\n<td>\n\nUnderstanding Experimental Data\n</td>\n<td>\n\nProblem set 4 due  <br>\nProblem set 5 out\n</td>\n</tr>\n<tr>\n<td>\n\n10\n</td>\n<td>\n\nUnderstanding Experimental Data (cont.)\n</td>\n<td>\n\n \n</td>\n</tr>\n<tr>\n<td>\n\n11\n</td>\n<td>\n\nIntroduction to Machine Learning\n</td>\n<td>\n\n \n</td>\n</tr>\n<tr>\n<td>\n\n12\n</td>\n<td>\n\nClustering\n</td>\n<td>\n\n \n</td>\n</tr>\n<tr>\n<td>\n\n13\n</td>\n<td>\n\nClassification\n</td>\n<td>\n\nProblem set 5 due\n</td>\n</tr>\n<tr>\n<td>\n\n14\n</td>\n<td>\n\nClassification and Statistical Sins\n</td>\n<td>\n\n \n</td>\n</tr>\n<tr>\n<td>\n\n15\n</td>\n<td>\n\nStatistical Sins and Wrap Up\n</td>\n<td>\n\nFinal Exam\n</td>\n</tr>\n</tbody>\n</table>\n</p>\n"
+    },
+    {
+      "slug": "instructor-insights",
+      "title": "Instructor Insights",
+      "kind": "page",
+      "contentHtml": "<p>Learn about Python, growth mindset, and the uses of rubber ducks in this interview with MIT lecturer Ana Bell, embedded below. Dr. Bell, who has been programming since she was twelve and now teaches popular introductory courses in computer science, says that coding consists of almost equal parts creativity and logic. The creative part, she explains, gets exercised particularly when you have to come up with an algorithm to solve a given problem, because for any given complex problem there are many possible approaches to tackling it. The logical part comes into play when you sit down to translate that algorithm into an unambiguous sequence of rules in a programming language, and again when you discover that the code you’ve written doesn’t work exactly as you intended it to and you have to set about debugging it. Among the topics the conversation addresses are why everyone–even in the age of generative AI–ought to study at least the basics of programming, why it can be useful to speak to an inanimate object when your coding project is stuck in the debugging stage, and how programming can help you choose your own adventure. </p>\n\n\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n  \n\n\n<div class=\"video-embed video-player-wrapper\">\n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  <div class=\"show-offline alert alert-warning\" role=\"alert\">\n    \n    \n      <svg xmlns=\"http://www.w3.org/2000/svg\" height=\"24\" viewBox=\"0 0 24 24\" width=\"24\">\n  <path d=\"M0 0h24v24H0z\" fill=\"none\"/>\n  <path d=\"M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z\" fill=\"#ffffff\"/>\n</svg>\n\n    \n    Viewing videos requires an internet connection\n  </div>\n\n<div class=\"video-container embedded-video-container youtube-container\">\n  <video\n    id=\"video-player-p8918BiV01c-3fc0f4c13904dac8ca5f49652e19fa99\"\n    class=\"video-js vjs-default-skin vjs-big-play-centered vjs-ocw\"\n    controls\n    data-downloadlink = \"https://archive.org/download/chalk-radio/S07E02_Ana_Bell_360p.mp4\"\n    data-transcriptlink = \"content/6-0002-fall-2016/files/p8918BiV01c_transcript.pdf\"\n    \n  >\n      \n        \n        <track kind=\"captions\" src=\"content/6-0002-fall-2016/files/p8918BiV01c_captions.webvtt\" srclang=\"en\" label=\"English\" default mode=\"showing\">\n        \n      \n  </video>\n</div>\n\n\n\n<script>\n  window.handleVideoJSError = function(err) {\n    console.error('Error loading VideoJS or YouTube player:', err)\n    var youtubeVideoContainers = document.querySelectorAll('.video-container.youtube-container')\n    for (var i = 0; i < youtubeVideoContainers.length; i++) {\n      youtubeVideoContainers[i].style.display = 'none';\n    }\n\n    var fallbackContainers = document.querySelectorAll('.video-fallback-container')\n    for (var j = 0; j < fallbackContainers.length; j++) {\n      fallbackContainers[j].style.display = 'block';\n    }\n  }\n\n  try {\n      new Function(\"class X{#abc;}; 1??2; ({})?.abc\");\n  }\n  catch (e) {\n    window.handleVideoJSError(e)\n  }\n\n  window.addEventListener('load', function() {\n    if (window.initVideoJS) {\n      window.initVideoJS()\n    }\n  })\n</script>\n\n\n\n  \n  \n  \n\n\n\n\n\n<div class=\"video-tab-toggle-section pointer\">\n  <div class=\"video-tab-header d-flex\">\n    \n      <span class=\"tab-title-section\">\n        \n          <a href=\"#/c/6-0002-fall-2016/r/mit-programmer-on-genai-growth-mindset-and-rubber-ducks\" aria-label=\"View video page\">\n          <i class=\"material-icons toggle md-18\" aria-hidden=\"true\"></i>\n<span class=\"tab-title\">View video page</span>\n\n          </a>\n        \n      </span>\n    \n    \n    \n      <div class=\"ml-auto\">\n        <button class=\"video-download-icons\" aria-label=\"Show Downloads\" aria-expanded=\"false\">\n          <img class=\"video-download-icon\" src=\"/static_shared/images/videojs_download.e0dbb2cfb52d2d71ba4a.svg\" aria-hidden=\"true\"/>\n          <i class=\"material-icons caret-down\" aria-hidden=\"true\"></i>\n        </button>\n      </div>\n    \n  </div>\n  \n  <div class=\"video-tab-download-popup hidden\">\n    \n    <div class=\"download-menu-main\">\n      <ul>\n        \n          <li>\n            <a href=\"https://archive.org/download/chalk-radio/S07E02_Ana_Bell_360p.mp4\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Download video\" download>Download video</a>\n          </li>\n        \n        \n          <li>\n            <button class=\"download-transcript-submenu-btn\" aria-haspopup=\"true\">\n              Download transcript<i class=\"material-icons\" aria-hidden=\"true\">chevron_right</i>\n            </button>\n          </li>\n        \n      </ul>\n    </div>\n    \n    \n    <div class=\"download-menu-submenu\">\n      <ul>\n        <li>\n          <button class=\"download-submenu-back-btn\">\n            <i class=\"material-icons\" aria-hidden=\"true\">chevron_left</i> Back\n          </button>\n        </li>\n        \n        <li>\n          <a href=\"content/6-0002-fall-2016/files/p8918BiV01c_transcript.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" lang=\"en\" aria-label=\"Download transcript: English\" download>English</a>\n        </li>\n        \n      </ul>\n    </div>\n    \n  </div>\n  \n</div>\n\n<div class=\"video-tab container collapse pr-0 \" role=\"tabpanel\">\n  <div class=\"video-tab-content-section\">\n    \n  </div>\n</div>\n\n  \n</div>\n\n"
+    },
+    {
+      "slug": "readings",
+      "title": "Readings",
+      "kind": "page",
+      "contentHtml": "<p>The textbook is <a   class=\"external-link \"   target=\"_blank\"   href=\"https://mitpress.mit.edu/9780262529624\"  aria-label=\"Buy at MIT Press (opens in a new tab)\"  >Buy at MIT Press</a> Guttag, John. <em>Introduction to Computation and Programming Using Python: With Application to Understanding Data</em>. 2nd ed. MIT Press, 2016. ISBN: 9780262529624. [Preview with <a   class=\"external-link \"   target=\"_blank\"   href=\"http://books.google.com/books?id=KabKDAAAQBAJ&amp;pg=PAfrontcover\"  aria-label=\"Google Books (opens in a new tab)\"  >Google Books</a>] It is available both in hard copy and as an e-book.</p>\n<p><table>\n\n<thead>\n\n<tr>\n\n<th>\n\nSES #\n</th>\n\n<th>\n\nTOPICS\n</th>\n\n<th>\n\nREADINGS\n</th>\n</p>\n</tr>\n\n<p></thead>\n\n<tr>\n\n<td>\n\n1\n</td>\n\n<td>\n\nIntroduction and Optimization Problems\n</td>\n\n<td>\n\nChapter 12.1, Chapter 5.4\n</td>\n</p>\n<p></tr>\n\n<tr>\n\n<td>\n\n2\n</td>\n\n<td>\n\nOptimization Problems\n</td>\n\n<td>\n\nChapter 13\n</td>\n</p>\n<p></tr>\n\n<tr>\n\n<td>\n\n3\n</td>\n\n<td>\n\nGraph-theoretic Models\n</td>\n\n<td>\n\nChapter 12.2\n</td>\n</p>\n<p></tr>\n\n<tr>\n\n<td>\n\n4\n</td>\n\n<td>\n\nStochastic Thinking\n</td>\n\n<td>\n\nChapter 14\n</td>\n</p>\n<p></tr>\n\n<tr>\n\n<td>\n\n5\n</td>\n\n<td>\n\nRandom Walks\n</td>\n\n<td>\n\nChapter 11, Chapter 14\n</td>\n</p>\n<p></tr>\n\n<tr>\n\n<td>\n\n6\n</td>\n\n<td>\n\nMonte Carlo Simulation\n</td>\n\n<td>\n\nChapter 15.1–15.4, Chapter 16\n</td>\n</p>\n<p></tr>\n\n<tr>\n\n<td>\n\n7\n</td>\n\n<td>\n\nConfidence Intervals\n</td>\n\n<td>\n\nChapter 16.4, Chapter 17\n</td>\n</p>\n<p></tr>\n\n<tr>\n\n<td>\n\n8\n</td>\n\n<td>\n\nSampling and Standard Error\n</td>\n\n<td>\n\nChapter 17\n</td>\n</p>\n<p></tr>\n\n<tr>\n\n<td>\n\n9\n</td>\n\n<td>\n\nUnderstanding Experimental Data\n</td>\n\n<td>\n\nChapter 18\n</td>\n</p>\n<p></tr>\n\n<tr>\n\n<td>\n\n10\n</td>\n\n<td>\n\nUnderstanding Experimental Data (cont.)\n</td>\n\n<td>\n\nChapter 18\n</td>\n</p>\n<p></tr>\n\n<tr>\n\n<td>\n\n11\n</td>\n\n<td>\n\nIntroduction to Machine Learning\n</td>\n\n<td>\n\nChapter 22\n</td>\n</p>\n<p></tr>\n\n<tr>\n\n<td>\n\n12\n</td>\n\n<td>\n\nClustering\n</td>\n\n<td>\n\nChapter 23\n</td>\n</p>\n<p></tr>\n\n<tr>\n\n<td>\n\n13\n</td>\n\n<td>\n\nClassification\n</td>\n\n<td>\n\nChapter 24\n</td>\n</p>\n<p></tr>\n\n<tr>\n\n<td>\n\n14\n</td>\n\n<td>\n\nClassification and Statistical Sins\n</td>\n\n<td>\n\nChapter 21\n</td>\n</p>\n<p></tr>\n\n<tr>\n\n<td>\n\n15\n</td>\n\n<td>\n\nStatistical Sins and Wrap Up\n</td>\n\n<td>\n\nChapter 21\n</td>\n</p>\n</tr>\n\n</table>\n\n"
+    },
+    {
+      "slug": "lecture-videos",
+      "title": "Lecture Videos",
+      "kind": "gallery",
+      "contentHtml": "<div class=\"mb-2 border-gray rounded video-gallery-card\">\n  <a class=\"video-link\" href=\"#/c/6-0002-fall-2016/r/lecture-1-introduction-and-optimization-problems\">\n    <div class=\"inner-container\">\n      <div class=\"left-col\"><img class=\"thumbnail\" src=\"https://img.youtube.com/vi/C1lhuz6pZC0/default.jpg\" alt=\"\" /></div>\n      <div class=\"right-col\">\n        <h5 class=\"video-title\">Lecture 1: Introduction and Optimization Problems</h5>\n      </div>\n    </div>\n  </a>\n</div>\n<div class=\"mb-2 border-gray rounded video-gallery-card\">\n  <a class=\"video-link\" href=\"#/c/6-0002-fall-2016/r/lecture-2-optimization-problems\">\n    <div class=\"inner-container\">\n      <div class=\"left-col\"><img class=\"thumbnail\" src=\"https://img.youtube.com/vi/uK5yvoXnkSk/default.jpg\" alt=\"\" /></div>\n      <div class=\"right-col\">\n        <h5 class=\"video-title\">Lecture 2: Optimization Problems</h5>\n      </div>\n    </div>\n  </a>\n</div>\n<div class=\"mb-2 border-gray rounded video-gallery-card\">\n  <a class=\"video-link\" href=\"#/c/6-0002-fall-2016/r/lecture-3-graph-theoretic-models\">\n    <div class=\"inner-container\">\n      <div class=\"left-col\"><img class=\"thumbnail\" src=\"https://img.youtube.com/vi/V_TulH374hw/default.jpg\" alt=\"\" /></div>\n      <div class=\"right-col\">\n        <h5 class=\"video-title\">Lecture 3: Graph-theoretic Models</h5>\n      </div>\n    </div>\n  </a>\n</div>\n<div class=\"mb-2 border-gray rounded video-gallery-card\">\n  <a class=\"video-link\" href=\"#/c/6-0002-fall-2016/r/lecture-4-stochastic-thinking\">\n    <div class=\"inner-container\">\n      <div class=\"left-col\"><img class=\"thumbnail\" src=\"https://img.youtube.com/vi/-1BnXEwHUok/default.jpg\" alt=\"\" /></div>\n      <div class=\"right-col\">\n        <h5 class=\"video-title\">Lecture 4: Stochastic Thinking</h5>\n      </div>\n    </div>\n  </a>\n</div>\n<div class=\"mb-2 border-gray rounded video-gallery-card\">\n  <a class=\"video-link\" href=\"#/c/6-0002-fall-2016/r/lecture-5-random-walks\">\n    <div class=\"inner-container\">\n      <div class=\"left-col\"><img class=\"thumbnail\" src=\"https://img.youtube.com/vi/6wUD_gp5WeE/default.jpg\" alt=\"\" /></div>\n      <div class=\"right-col\">\n        <h5 class=\"video-title\">Lecture 5: Random Walks</h5>\n      </div>\n    </div>\n  </a>\n</div>\n<div class=\"mb-2 border-gray rounded video-gallery-card\">\n  <a class=\"video-link\" href=\"#/c/6-0002-fall-2016/r/lecture-6-monte-carlo-simulation\">\n    <div class=\"inner-container\">\n      <div class=\"left-col\"><img class=\"thumbnail\" src=\"https://img.youtube.com/vi/OgO1gpXSUzU/default.jpg\" alt=\"\" /></div>\n      <div class=\"right-col\">\n        <h5 class=\"video-title\">Lecture 6: Monte Carlo Simulation</h5>\n      </div>\n    </div>\n  </a>\n</div>\n<div class=\"mb-2 border-gray rounded video-gallery-card\">\n  <a class=\"video-link\" href=\"#/c/6-0002-fall-2016/r/lecture-7-confidence-intervals\">\n    <div class=\"inner-container\">\n      <div class=\"left-col\"><img class=\"thumbnail\" src=\"https://img.youtube.com/vi/rUxP7TM8-wo/default.jpg\" alt=\"\" /></div>\n      <div class=\"right-col\">\n        <h5 class=\"video-title\">Lecture 7: Confidence Intervals</h5>\n      </div>\n    </div>\n  </a>\n</div>\n<div class=\"mb-2 border-gray rounded video-gallery-card\">\n  <a class=\"video-link\" href=\"#/c/6-0002-fall-2016/r/lecture-8-sampling-and-standard-error\">\n    <div class=\"inner-container\">\n      <div class=\"left-col\"><img class=\"thumbnail\" src=\"https://img.youtube.com/vi/soZv_KKax3E/default.jpg\" alt=\"\" /></div>\n      <div class=\"right-col\">\n        <h5 class=\"video-title\">Lecture 8: Sampling and Standard Error</h5>\n      </div>\n    </div>\n  </a>\n</div>\n<div class=\"mb-2 border-gray rounded video-gallery-card\">\n  <a class=\"video-link\" href=\"#/c/6-0002-fall-2016/r/lecture-9-understanding-experimental-data\">\n    <div class=\"inner-container\">\n      <div class=\"left-col\"><img class=\"thumbnail\" src=\"https://img.youtube.com/vi/vIFKGFl1Cn8/default.jpg\" alt=\"\" /></div>\n      <div class=\"right-col\">\n        <h5 class=\"video-title\">Lecture 9: Understanding Experimental Data</h5>\n      </div>\n    </div>\n  </a>\n</div>\n<div class=\"mb-2 border-gray rounded video-gallery-card\">\n  <a class=\"video-link\" href=\"#/c/6-0002-fall-2016/r/lecture-10-understanding-experimental-data-cont\">\n    <div class=\"inner-container\">\n      <div class=\"left-col\"><img class=\"thumbnail\" src=\"https://img.youtube.com/vi/fQvg-hh9dUw/default.jpg\" alt=\"\" /></div>\n      <div class=\"right-col\">\n        <h5 class=\"video-title\">Lecture 10: Understanding Experimental Data (cont.)</h5>\n      </div>\n    </div>\n  </a>\n</div>\n<div class=\"mb-2 border-gray rounded video-gallery-card\">\n  <a class=\"video-link\" href=\"#/c/6-0002-fall-2016/r/lecture-11-introduction-to-machine-learning\">\n    <div class=\"inner-container\">\n      <div class=\"left-col\"><img class=\"thumbnail\" src=\"https://img.youtube.com/vi/h0e2HAPTGF4/default.jpg\" alt=\"\" /></div>\n      <div class=\"right-col\">\n        <h5 class=\"video-title\">Lecture 11: Introduction to Machine Learning</h5>\n      </div>\n    </div>\n  </a>\n</div>\n<div class=\"mb-2 border-gray rounded video-gallery-card\">\n  <a class=\"video-link\" href=\"#/c/6-0002-fall-2016/r/lecture-12-clustering\">\n    <div class=\"inner-container\">\n      <div class=\"left-col\"><img class=\"thumbnail\" src=\"https://img.youtube.com/vi/esmzYhuFnds/default.jpg\" alt=\"\" /></div>\n      <div class=\"right-col\">\n        <h5 class=\"video-title\">Lecture 12: Clustering</h5>\n      </div>\n    </div>\n  </a>\n</div>\n<div class=\"mb-2 border-gray rounded video-gallery-card\">\n  <a class=\"video-link\" href=\"#/c/6-0002-fall-2016/r/lecture-13-classification\">\n    <div class=\"inner-container\">\n      <div class=\"left-col\"><img class=\"thumbnail\" src=\"https://img.youtube.com/vi/eg8DJYwdMyg/default.jpg\" alt=\"\" /></div>\n      <div class=\"right-col\">\n        <h5 class=\"video-title\">Lecture 13: Classification</h5>\n      </div>\n    </div>\n  </a>\n</div>\n<div class=\"mb-2 border-gray rounded video-gallery-card\">\n  <a class=\"video-link\" href=\"#/c/6-0002-fall-2016/r/lecture-14-classification-and-statistical-sins\">\n    <div class=\"inner-container\">\n      <div class=\"left-col\"><img class=\"thumbnail\" src=\"https://img.youtube.com/vi/K2SC-WPdT6k/default.jpg\" alt=\"\" /></div>\n      <div class=\"right-col\">\n        <h5 class=\"video-title\">Lecture 14: Classification and Statistical Sins</h5>\n      </div>\n    </div>\n  </a>\n</div>\n<div class=\"mb-2 border-gray rounded video-gallery-card\">\n  <a class=\"video-link\" href=\"#/c/6-0002-fall-2016/r/lecture-15-statistical-sins-and-wrap-up\">\n    <div class=\"inner-container\">\n      <div class=\"left-col\"><img class=\"thumbnail\" src=\"https://img.youtube.com/vi/iOZVbILaIZc/default.jpg\" alt=\"\" /></div>\n      <div class=\"right-col\">\n        <h5 class=\"video-title\">Lecture 15: Statistical Sins and Wrap Up</h5>\n      </div>\n    </div>\n  </a>\n</div>\n\n\n"
+    },
+    {
+      "slug": "lecture-slides-and-files",
+      "title": "Lecture Slides and Files",
+      "kind": "page",
+      "contentHtml": "<p><table>\n\n<thead>\n\n<tr>\n\n<th>\n\nSES #\n</th>\n\n<th>\n\nLECTURE SLIDES\n</th>\n\n<th>\n\nCODE AND ADDITIONAL FILES\n</th>\n</p>\n</tr>\n\n<p></thead>\n\n<tr>\n\n<td>\n\n1\n</td>\n\n<td>\n\n<a href=\"#/c/6-0002-fall-2016/r/mit6_0002f16_lec1\">Lecture 1: Introduction and Optimization Problems (PDF)</a>\n</td>\n\n<td>\n\n<a href=\"#/c/6-0002-fall-2016/r/lecture1\">Additional Files for Lecture 1 (ZIP)</a> (This ZIP file contains: 1 .txt file and 1 .py file)\n</td>\n</p>\n<p></tr>\n\n<tr>\n\n<td>\n\n2\n</td>\n\n<td>\n\n<a href=\"#/c/6-0002-fall-2016/r/mit6_0002f16_lec2\">Lecture 2: Optimization Problems (PDF - 6.9MB)</a>\n</td>\n\n<td>\n\n<a href=\"#/c/6-0002-fall-2016/r/additional-files-for-lecture-2\">Additional Files for Lecture 2 (ZIP)</a> (This ZIP file contains: 1 .txt file and 1 .py file)\n</td>\n</p>\n<p></tr>\n\n<tr>\n\n<td>\n\n3\n</td>\n\n<td>\n\n<a href=\"#/c/6-0002-fall-2016/r/mit6_0002f16_lec3\">Lecture 3: Graph-theoretic Models (PDF)</a>\n</td>\n\n<td>\n\n<a href=\"#/c/6-0002-fall-2016/r/lecturegraphspy\">Code File for Lecture 3 (PY)</a>\n</td>\n</p>\n<p></tr>\n\n<tr>\n\n<td>\n\n4\n</td>\n\n<td>\n\n<a href=\"#/c/6-0002-fall-2016/r/mit6_0002f16_lec4\">Lecture 4: Stochastic Thinking (PDF)</a>\n</td>\n\n<td>\n\n<a href=\"#/c/6-0002-fall-2016/r/lecture4py\">Code File for Lecture 4 (PY)</a>\n</td>\n</p>\n<p></tr>\n\n<tr>\n\n<td>\n\n5\n</td>\n\n<td>\n\n<a href=\"#/c/6-0002-fall-2016/r/mit6_0002f16_lec5\">Lecture 5: Random Walks (PDF)</a>\n</td>\n\n<td>\n\n<a href=\"#/c/6-0002-fall-2016/r/lect5\">Code File for Lecture 5 (PY)</a>\n</td>\n</p>\n<p></tr>\n\n<tr>\n\n<td>\n\n6\n</td>\n\n<td>\n\n<a href=\"#/c/6-0002-fall-2016/r/mit6_0002f16_lec6\">Lecture 6: Monte Carlo Simulation (PDF - 1.2MB)</a>\n</td>\n\n<td>\n\n<a href=\"#/c/6-0002-fall-2016/r/lect6py\">Code File for Lecture 6 (PY)</a>\n</td>\n</p>\n<p></tr>\n\n<tr>\n\n<td>\n\n7\n</td>\n\n<td>\n\n<a href=\"#/c/6-0002-fall-2016/r/mit6_0002f16_lec7\">Lecture 7: Confidence Intervals (PDF)</a>\n</td>\n\n<td>\n\n<a href=\"#/c/6-0002-fall-2016/r/lect7py\">Code File for Lecture 7 (PY)</a>\n</td>\n</p>\n<p></tr>\n\n<tr>\n\n<td>\n\n8\n</td>\n\n<td>\n\n<a href=\"#/c/6-0002-fall-2016/r/mit6_0002f16_lec8\">Lecture 8: Sampling and Standard Error (PDF - 1.3MB)</a>\n</td>\n\n<td>\n\n<a href=\"#/c/6-0002-fall-2016/r/additional-files-for-lecture-8\">Additional Files for Lecture 8 (ZIP - 1.6MB)</a> (This ZIP file contains: 1 .csv file and 1 .py file)\n</td>\n</p>\n<p></tr>\n\n<tr>\n\n<td>\n\n9\n</td>\n\n<td>\n\n<a href=\"#/c/6-0002-fall-2016/r/mit6_0002f16_lec9\">Lecture 9: Understanding Experimental Data (PDF)</a>\n</td>\n\n<td>\n\n<a href=\"#/c/6-0002-fall-2016/r/additional-files-for-lecture-9\">Additional Files for Lecture 9 (ZIP)</a> (This ZIP file contains: 4 .txt files and 1 .py file)\n</td>\n</p>\n<p></tr>\n\n<tr>\n\n<td>\n\n10\n</td>\n\n<td>\n\n<a href=\"#/c/6-0002-fall-2016/r/mit6_0002f16_lec10\">Lecture 10: Understanding Experimental Data (cont.) (PDF - 1.3MB)</a>\n</td>\n\n<td>\n\n<a href=\"#/c/6-0002-fall-2016/r/additional-files-for-lecture-10\">Additional Files for Lecture 10 (ZIP - 1.7MB)</a> (This ZIP file contains: 1 .csv file, 7 .txt files, and 2 .py files)\n</td>\n</p>\n<p></tr>\n\n<tr>\n\n<td>\n\n11\n</td>\n\n<td>\n\n<a href=\"#/c/6-0002-fall-2016/r/mit6_0002f16_lec11\">Lecture 11: Introduction to Machine Learning (PDF - 1.1MB)</a>\n</td>\n\n<td>\n\n<a href=\"#/c/6-0002-fall-2016/r/lecturecodepy\">Code File for Lecture 11 (PY)</a>\n</td>\n</p>\n<p></tr>\n\n<tr>\n\n<td>\n\n12\n</td>\n\n<td>\n\n<a href=\"#/c/6-0002-fall-2016/r/mit6_0002f16_lec12\">Lecture 12: Clustering (PDF)</a>\n</td>\n\n<td>\n\n<a href=\"#/c/6-0002-fall-2016/r/additional-files-for-lecture-12\">Additional Files for Lecture 12 (ZIP)</a> (This ZIP file contains: 1 .txt file and 2 .py files)\n</td>\n</p>\n<p></tr>\n\n<tr>\n\n<td>\n\n13\n</td>\n\n<td>\n\n<a href=\"#/c/6-0002-fall-2016/r/mit6_0002f16_lec13\">Lecture 13: Classification (PDF)</a>\n</td>\n\n<td>\n\n<a href=\"#/c/6-0002-fall-2016/r/additional-files-for-lecture-13\">Additional Files for Lecture 13 (ZIP)</a> (This ZIP file contains: 1 .txt file and 1 .py file)\n</td>\n</p>\n<p></tr>\n\n<tr>\n\n<td>\n\n14\n</td>\n\n<td>\n\n<a href=\"#/c/6-0002-fall-2016/r/mit6_0002f16_lec14\">Lecture 14: Classification and Statistical Sins (PDF)</a>\n</td>\n\n<td>\n\n<a href=\"#/c/6-0002-fall-2016/r/additional-files-for-lecture-14\">Additional Files for Lecture 14 (ZIP)</a> (This ZIP file contains: 1 .txt file and 1 .py file)\n</td>\n</p>\n<p></tr>\n\n<tr>\n\n<td>\n\n15\n</td>\n\n<td>\n\n<a href=\"#/c/6-0002-fall-2016/r/mit6_0002f16_lec15\">Lecture 15: Statistical Sins and Wrap Up (PDF - 1.1MB)</a>\n</td>\n\n<td>\n\n<a href=\"#/c/6-0002-fall-2016/r/lect15py\">Code File for Lecture 15 (PY)</a>\n</td>\n</p>\n</tr>\n\n</table>\n\n"
+    },
+    {
+      "slug": "assignments",
+      "title": "Assignments",
+      "kind": "page",
+      "contentHtml": "<p>Please review the <a href=\"#/c/6-0002-fall-2016/r/mit6_0002f16_styleguide\">Style Guide (PDF)</a> before attempting the problem sets. We have compiled a list of other Python resources that you may find helpful in this Additional <a href=\"#/c/6-0002-fall-2016/r/mit6_0002f16_pythonresurcs\">Python Resources document (PDF)</a>. It contains links to other online textbooks on Python, debugging tools, and fun online coding challenges.</p>\n<p>Solutions for the problems sets are not available.</p>\n<p><a href=\"#/c/6-0002-fall-2016/r/ps1\">Problem Set 1: Space Cows Transportation (ZIP)</a> (This ZIP file contains: 1 .pdf file, 2 .txt files, and 3 .py files)</p>\n<p><a href=\"#/c/6-0002-fall-2016/r/ps2\">Problem Set 2: Fastest Way to Get Around MIT (ZIP)</a> (This ZIP file contains: 1 .pdf file, 1 .txt file, and 2 .py files)</p>\n<p><a href=\"#/c/6-0002-fall-2016/r/ps3\">Problem Set 3: Robot Simulation (ZIP)</a> (This ZIP file contains: 1 .pdf file, 4 .pyc files, and 4 .py files)</p>\n<p><a href=\"#/c/6-0002-fall-2016/r/ps4\">Problem Set 4: Simulating the Spread of Disease and Bacteria Population (ZIP)</a> (This ZIP file contains: 1 .pdf file and 2 .py files)</p>\n<p><a href=\"#/c/6-0002-fall-2016/r/ps5\">Problem Set 5: Modeling Global Warming (ZIP - 2.3MB)</a> (This ZIP file contains: 1 .pdf file, 1 .csv file, and 2 .py files)</p>\n"
+    },
+    {
+      "slug": "software",
+      "title": "Software",
+      "kind": "page",
+      "contentHtml": "<p>This course requires the Python programming language, specifically Python 3.5.</p>\n\n    <h3 id=\"installation-files\">Installation Files</h3>\n\n<ul>\n<li><a href=\"#/c/6-0002-fall-2016/r/python-install\">Python Installation Files (ZIP)</a> (This ZIP file contains: 1 .pdf file and 1 .py file)</li>\n</ul>\n\n    <h3 id=\"style-guide\">Style Guide</h3>\n\n<ul>\n<li><a href=\"#/c/6-0002-fall-2016/r/mit6_0002f16_styleguide\">Style Guide (PDF)</a></li>\n</ul>\n\n    <h3 id=\"additional-python-resources\">Additional Python Resources</h3>\n\n<ul>\n<li><a href=\"#/c/6-0002-fall-2016/r/mit6_0002f16_pythonresurcs\">Additional Python Resources (PDF)</a></li>\n</ul>\n"
+    }
+  ],
+  "resources": {
+    "additional-files-for-lecture-12": {
+      "slug": "additional-files-for-lecture-12",
+      "title": "Additional Files for Lecture 12",
+      "kind": "archive",
+      "description": "<p>This zip folder contains 1 .txt file and 2 .py files.</p>\n",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "02c65002d8f69f42e39b6a53ec010351_Lecture12.zip",
+      "fileType": "application/zip",
+      "size": 3771
+    },
+    "mit6_0002f16_lec8": {
+      "slug": "mit6_0002f16_lec8",
+      "title": "Lecture 8: Sampling and Standard Error",
+      "kind": "pdf",
+      "description": "<p>This file contains the information regarding the Sampling and Standard Error.</p>\n",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "02f2ed5e44be5415b2cba8175c924092_MIT6_0002F16_lec8.pdf",
+      "fileType": "application/pdf",
+      "size": 1371033
+    },
+    "6wud_gp5wee-1": {
+      "slug": "6wud_gp5wee-1",
+      "title": "3play pdf file",
+      "kind": "pdf",
+      "description": "",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "03bf169bf222218a135955bf39ee3b2e_6wUD_gp5WeE.pdf",
+      "fileType": "application/pdf",
+      "size": 60234
+    },
+    "mit6_0002f16_lec1": {
+      "slug": "mit6_0002f16_lec1",
+      "title": "Lecture 1",
+      "kind": "pdf",
+      "description": "<p>This file contains the information regarding the lecture 1.</p>\n",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "0a353b26f1c6bd161b28b3f249aa05d1_MIT6_0002F16_lec1.pdf",
+      "fileType": "application/pdf",
+      "size": 624715
+    },
+    "ogo1gpxsuzu-2": {
+      "slug": "ogo1gpxsuzu-2",
+      "title": "3play caption file",
+      "kind": "file",
+      "description": "",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "0a7a61628fed5a67b11469d56d7e521e_OgO1gpXSUzU.vtt",
+      "fileType": "application/x-subrip",
+      "size": 60157
+    },
+    "v_tulh374hw": {
+      "slug": "v_tulh374hw",
+      "title": "3play caption file",
+      "kind": "file",
+      "description": "",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "0b1a525047ee074368bab12031b1a41b_V_TulH374hw.srt",
+      "fileType": "application/x-subrip",
+      "size": 91244
+    },
+    "mit6_0002f16_styleguide": {
+      "slug": "mit6_0002f16_styleguide",
+      "title": "Style Guide",
+      "kind": "pdf",
+      "description": "<p>This resource contains information regarding introduction to computational thinking and data science: Style guide.</p>\n",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "1495604204e8f00c8b1e423f83395180_MIT6_0002F16_StyleGuide.pdf",
+      "fileType": "application/pdf",
+      "size": 639613
+    },
+    "ogo1gpxsuzu-1": {
+      "slug": "ogo1gpxsuzu-1",
+      "title": "3play pdf file",
+      "kind": "pdf",
+      "description": "",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "151e6f3b485d7153f373129690094717_OgO1gpXSUzU.pdf",
+      "fileType": "application/pdf",
+      "size": 61165
+    },
+    "v_tulh374hw-2": {
+      "slug": "v_tulh374hw-2",
+      "title": "3play caption file",
+      "kind": "file",
+      "description": "",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "16ac952ca7a856bdb21e9083946f188e_V_TulH374hw.vtt",
+      "fileType": "application/x-subrip",
+      "size": 86234
+    },
+    "iozvbilaizc-1": {
+      "slug": "iozvbilaizc-1",
+      "title": "3play pdf file",
+      "kind": "pdf",
+      "description": "",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "16e9ec022f34566085e928bc713b36d2_iOZVbILaIZc.pdf",
+      "fileType": "application/pdf",
+      "size": 60481
+    },
+    "esmzyhufnds-1": {
+      "slug": "esmzyhufnds-1",
+      "title": "3play pdf file",
+      "kind": "pdf",
+      "description": "",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "17feded894d842066364cd423ba4e007_esmzYhuFnds.pdf",
+      "fileType": "application/pdf",
+      "size": 59429
+    },
+    "mit6_0002f16_lec13": {
+      "slug": "mit6_0002f16_lec13",
+      "title": "Lecture 13: Classification",
+      "kind": "pdf",
+      "description": "<p>This file contains the information regarding the Classification.</p>\n",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "19a63b4aaa3fd9c75cd1b8e940654f53_MIT6_0002F16_lec13.pdf",
+      "fileType": "application/pdf",
+      "size": 944285
+    },
+    "c1lhuz6pzc0-1": {
+      "slug": "c1lhuz6pzc0-1",
+      "title": "3play pdf file",
+      "kind": "pdf",
+      "description": "",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "1a33a68ce69d3931e73e60bf586ec7f0_C1lhuz6pZC0.pdf",
+      "fileType": "application/pdf",
+      "size": 50439
+    },
+    "fqvg-hh9duw-1": {
+      "slug": "fqvg-hh9duw-1",
+      "title": "3play pdf file",
+      "kind": "pdf",
+      "description": "",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "1c4e5bac0a10ca11c56f2fbb8c61a493_fQvg-hh9dUw.pdf",
+      "fileType": "application/pdf",
+      "size": 73975
+    },
+    "mit6_0002f16_lec9": {
+      "slug": "mit6_0002f16_lec9",
+      "title": "Lecture 9: Understanding Experimental Data",
+      "kind": "pdf",
+      "description": "<p>This file contains the information regarding the Understanding Experimental Data.</p>\n",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "20a7e184a1a2b3c34a5055dc1f1dc066_MIT6_0002F16_lec9.pdf",
+      "fileType": "application/pdf",
+      "size": 686879
+    },
+    "esmzyhufnds-2": {
+      "slug": "esmzyhufnds-2",
+      "title": "3play caption file",
+      "kind": "file",
+      "description": "",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "240dddf19b9f5c6ea248285541be53c7_esmzYhuFnds.vtt",
+      "fileType": "application/x-subrip",
+      "size": 59407
+    },
+    "lect15py": {
+      "slug": "lect15py",
+      "title": "lect15.py",
+      "kind": "code",
+      "description": "<p>This file contain the information regarding code file for lecture 15.</p>\n",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "24ac0bcbab36744830c959ee3f74d26f_lect15.py",
+      "fileType": "text/python-source",
+      "size": 1882
+    },
+    "lecture-2-optimization-problems": {
+      "slug": "lecture-2-optimization-problems",
+      "title": "Lecture 2: Optimization Problems",
+      "kind": "video",
+      "description": "<p><strong>Description:</strong> Prof. Guttag explains dynamic programming and shows some applications of the process.</p>\n<p><strong>Instructor:</strong> John Guttag</p>\n",
+      "youtubeId": "uK5yvoXnkSk",
+      "archiveUrl": "https://archive.org/download/MIT6.0002F16/MIT6_0002F16_lec02_300k.mp4",
+      "transcript": "338a65426e11000653a16758d8f9609a_uK5yvoXnkSk.pdf",
+      "captions": [
+        {
+          "lang": "en",
+          "file": "872b808a53775fef91a224c9097a4fd9_uK5yvoXnkSk.vtt"
+        }
+      ],
+      "file": null,
+      "fileType": null,
+      "size": "112345825"
+    },
+    "lecture-13-classification": {
+      "slug": "lecture-13-classification",
+      "title": "Lecture 13: Classification",
+      "kind": "video",
+      "description": "<p><strong>Description:</strong> Prof. Guttag introduces supervised learning with nearest neighbor classification using feature scaling and decision trees.</p>\n<p><strong>Instructor:</strong> John Guttag</p>\n",
+      "youtubeId": "eg8DJYwdMyg",
+      "archiveUrl": "https://archive.org/download/MIT6.0002F16/MIT6_0002F16_lec13_300k.mp4",
+      "transcript": "cb500110f0314c02ebb24dfc8d676f42_eg8DJYwdMyg.pdf",
+      "captions": [
+        {
+          "lang": "en",
+          "file": "ff9a51abcbf85c0eba0a142bc9e4ec7d_eg8DJYwdMyg.vtt"
+        }
+      ],
+      "file": null,
+      "fileType": null,
+      "size": "115273197"
+    },
+    "sozv_kkax3e-1": {
+      "slug": "sozv_kkax3e-1",
+      "title": "3play pdf file",
+      "kind": "pdf",
+      "description": "",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "2b524c63c8236d001970e454a3707bf9_soZv_KKax3E.pdf",
+      "fileType": "application/pdf",
+      "size": 55234
+    },
+    "esmzyhufnds": {
+      "slug": "esmzyhufnds",
+      "title": "3play caption file",
+      "kind": "file",
+      "description": "",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "2bacd69208746760bbf11feb3ccd2a0f_esmzYhuFnds.srt",
+      "fileType": "application/x-subrip",
+      "size": 62691
+    },
+    "uk5yvoxnksk-1": {
+      "slug": "uk5yvoxnksk-1",
+      "title": "3play pdf file",
+      "kind": "pdf",
+      "description": "",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "338a65426e11000653a16758d8f9609a_uK5yvoXnkSk.pdf",
+      "fileType": "application/pdf",
+      "size": 55656
+    },
+    "lecture-4-stochastic-thinking": {
+      "slug": "lecture-4-stochastic-thinking",
+      "title": "Lecture 4: Stochastic Thinking",
+      "kind": "video",
+      "description": "<p><strong>Description:</strong> Prof. Guttag introduces stochastic processes and basic probability theory.</p>\n<p><strong>Instructor:</strong> John Guttag</p>\n",
+      "youtubeId": "-1BnXEwHUok",
+      "archiveUrl": "https://archive.org/download/MIT6.0002F16/MIT6_0002F16_lec04_300k.mp4",
+      "transcript": "7adcba0777b9ae0161a8631ecf6d9060_-1BnXEwHUok.pdf",
+      "captions": [
+        {
+          "lang": "en",
+          "file": "8f30fbded7a45916bec11a59017feacf_-1BnXEwHUok.vtt"
+        }
+      ],
+      "file": null,
+      "fileType": null,
+      "size": "115692505"
+    },
+    "mit6_0002f16_lec12": {
+      "slug": "mit6_0002f16_lec12",
+      "title": "Lecture 12: Clustering",
+      "kind": "pdf",
+      "description": "<p>This file contains the information regarding the Clustering.</p>\n",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "367ebcbfde99ec18e14e87b69f564035_MIT6_0002F16_lec12.pdf",
+      "fileType": "application/pdf",
+      "size": 1019587
+    },
+    "lecture-6-monte-carlo-simulation": {
+      "slug": "lecture-6-monte-carlo-simulation",
+      "title": "Lecture 6: Monte Carlo Simulation",
+      "kind": "video",
+      "description": "<p><strong>Description:</strong> Prof. Guttag discusses the Monte Carlo simulation, Roulette.</p>\n<p><strong>Instructor:</strong> John Guttag</p>\n",
+      "youtubeId": "OgO1gpXSUzU",
+      "archiveUrl": "https://archive.org/download/MIT6.0002F16/MIT6_0002F16_lec06_300k.mp4",
+      "transcript": "151e6f3b485d7153f373129690094717_OgO1gpXSUzU.pdf",
+      "captions": [
+        {
+          "lang": "en",
+          "file": "0a7a61628fed5a67b11469d56d7e521e_OgO1gpXSUzU.vtt"
+        }
+      ],
+      "file": null,
+      "fileType": null,
+      "size": "115024651"
+    },
+    "iozvbilaizc": {
+      "slug": "iozvbilaizc",
+      "title": "3play caption file",
+      "kind": "file",
+      "description": "",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "3c9979f33cd08f97e9ca0fa3fb3e44b8_iOZVbILaIZc.srt",
+      "fileType": "application/x-subrip",
+      "size": 56022
+    },
+    "mit6_0002f16_lec7": {
+      "slug": "mit6_0002f16_lec7",
+      "title": "Lecture 7: Confidence Intervals",
+      "kind": "pdf",
+      "description": "<p>This file contains the information regarding the Confidence Intervals.</p>\n",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "3d8b8210a6f919be25369d985b650abf_MIT6_0002F16_lec7.pdf",
+      "fileType": "application/pdf",
+      "size": 942727
+    },
+    "mit6_0002f16_lec2": {
+      "slug": "mit6_0002f16_lec2",
+      "title": "Lecture 2: Optimization Problems",
+      "kind": "pdf",
+      "description": "<p>This file contains the information regarding the Optimization Problems.</p>\n",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "3edc8db04a770f3da51086320c8fe4da_MIT6_0002F16_lec2.pdf",
+      "fileType": "application/pdf",
+      "size": 590292
+    },
+    "sozv_kkax3e": {
+      "slug": "sozv_kkax3e",
+      "title": "3play caption file",
+      "kind": "file",
+      "description": "",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "3f55616adc3d946f72fcf7d3b05a5d55_soZv_KKax3E.srt",
+      "fileType": "application/x-subrip",
+      "size": 58047
+    },
+    "lecture-3-graph-theoretic-models": {
+      "slug": "lecture-3-graph-theoretic-models",
+      "title": "Lecture 3: Graph-theoretic Models",
+      "kind": "video",
+      "description": "<p><strong>Description:</strong> Prof. Grimson discusses graph models and depth-first and breadth-first search algorithms.</p>\n<p><strong>Instructor:</strong> Eric Grimson</p>\n",
+      "youtubeId": "V_TulH374hw",
+      "archiveUrl": "https://archive.org/download/MIT6.0002F16/MIT6_0002F16_lec03_300k.mp4",
+      "transcript": "6d7386392e8349068141a7c2df2dead9_V_TulH374hw.pdf",
+      "captions": [
+        {
+          "lang": "en",
+          "file": "16ac952ca7a856bdb21e9083946f188e_V_TulH374hw.vtt"
+        }
+      ],
+      "file": null,
+      "fileType": null,
+      "size": "117873948"
+    },
+    "iozvbilaizc-2": {
+      "slug": "iozvbilaizc-2",
+      "title": "3play caption file",
+      "kind": "file",
+      "description": "",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "483cefbc6af05afabbc6506e21f82e84_iOZVbILaIZc.vtt",
+      "fileType": "application/x-subrip",
+      "size": 53162
+    },
+    "mit6_0002f16_lec11": {
+      "slug": "mit6_0002f16_lec11",
+      "title": "Lecture 11: Introduction to Machine Learning",
+      "kind": "pdf",
+      "description": "<p>This file contains the information regarding the Introduction to Machine Learning.</p>\n",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "4c4fc506075a8502ccc5191583d22882_MIT6_0002F16_lec11.pdf",
+      "fileType": "application/pdf",
+      "size": 1141890
+    },
+    "lecturegraphspy": {
+      "slug": "lecturegraphspy",
+      "title": "lectureGraphs.py",
+      "kind": "code",
+      "description": "<p>This file contain the information regarding code file for lecture 3.</p>\n",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "4ca8d422daeafd10a296c9f2b0df9189_lectureGraphs.py",
+      "fileType": "text/python-source",
+      "size": 5631
+    },
+    "sozv_kkax3e-2": {
+      "slug": "sozv_kkax3e-2",
+      "title": "3play caption file",
+      "kind": "file",
+      "description": "",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "4f622d3309645cefafc357f5151b33bc_soZv_KKax3E.vtt",
+      "fileType": "application/x-subrip",
+      "size": 55075
+    },
+    "k2sc-wpdt6k": {
+      "slug": "k2sc-wpdt6k",
+      "title": "3play caption file",
+      "kind": "file",
+      "description": "",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "4f8eb3da10a2faad7d0d11ee63f0b641_K2SC-WPdT6k.srt",
+      "fileType": "application/x-subrip",
+      "size": 61301
+    },
+    "6wud_gp5wee-2": {
+      "slug": "6wud_gp5wee-2",
+      "title": "3play caption file",
+      "kind": "file",
+      "description": "",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "5044d4e030c55242ba24395be426ea82_6wUD_gp5WeE.vtt",
+      "fileType": "application/x-subrip",
+      "size": 57892
+    },
+    "mit6_0002f16_lec5": {
+      "slug": "mit6_0002f16_lec5",
+      "title": "Lecture 5: Random Walks",
+      "kind": "pdf",
+      "description": "<p>This file contains the information regarding the Random Walks.</p>\n",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "508a9076aebfc7d597dde836255182c7_MIT6_0002F16_lec5.pdf",
+      "fileType": "application/pdf",
+      "size": 823811
+    },
+    "lecture-14-classification-and-statistical-sins": {
+      "slug": "lecture-14-classification-and-statistical-sins",
+      "title": "Lecture 14: Classification and Statistical Sins",
+      "kind": "video",
+      "description": "<p><strong>Description:</strong> Prof. Guttag finishes discussing classification and introduces common statistical fallacies and pitfalls.</p>\n<p><strong>Instructor:</strong> John Guttag</p>\n",
+      "youtubeId": "K2SC-WPdT6k",
+      "archiveUrl": "https://archive.org/download/MIT6.0002F16/MIT6_0002F16_lec14_300k.mp4",
+      "transcript": "d131f5cfbd1c1234acef86bbbb1b9656_K2SC-WPdT6k.pdf",
+      "captions": [
+        {
+          "lang": "en",
+          "file": "c39bf448235e5ae09a089715e8c1ef18_K2SC-WPdT6k.vtt"
+        }
+      ],
+      "file": null,
+      "fileType": null,
+      "size": "114333225"
+    },
+    "-1bnxewhuok": {
+      "slug": "-1bnxewhuok",
+      "title": "3play caption file",
+      "kind": "file",
+      "description": "",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "54f3ffe5584818dd319c464427923c25_-1BnXEwHUok.srt",
+      "fileType": "application/x-subrip",
+      "size": 60546
+    },
+    "mit6_0002f16_lec6": {
+      "slug": "mit6_0002f16_lec6",
+      "title": "Lecture 6: Monte Carlo Simulation",
+      "kind": "pdf",
+      "description": "<p>This file contains the information regarding the Monte Carlo Simulation.</p>\n",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "5af20311b02eaab959fcdb7ffb5694d3_MIT6_0002F16_lec6.pdf",
+      "fileType": "application/pdf",
+      "size": 1296639
+    },
+    "mit6_0002f16_lec4": {
+      "slug": "mit6_0002f16_lec4",
+      "title": "Lecture 4: Stochastic Thinking",
+      "kind": "pdf",
+      "description": "<p>This file contains the information regarding the Stochastic Thinking.</p>\n",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "5b4ec0ef29910b74e6a4bbd5ccf4dda5_MIT6_0002F16_lec4.pdf",
+      "fileType": "application/pdf",
+      "size": 851195
+    },
+    "lecture-7-confidence-intervals": {
+      "slug": "lecture-7-confidence-intervals",
+      "title": "Lecture 7: Confidence Intervals",
+      "kind": "video",
+      "description": "<p><strong>Description:</strong> Prof. Guttag continues discussing Monte Carlo simulations.</p>\n<p><strong>Instructor:</strong> John Guttag</p>\n",
+      "youtubeId": "rUxP7TM8-wo",
+      "archiveUrl": "https://archive.org/download/MIT6.0002F16/MIT6_0002F16_lec07_300k.mp4",
+      "transcript": "d909d24a4e993ab66ef7d70f065d4873_rUxP7TM8-wo.pdf",
+      "captions": [
+        {
+          "lang": "en",
+          "file": "80a64e43656053c7ab6c8a97bedddd4f_rUxP7TM8-wo.vtt"
+        }
+      ],
+      "file": null,
+      "fileType": null,
+      "size": "117957035"
+    },
+    "lecture-15-statistical-sins-and-wrap-up": {
+      "slug": "lecture-15-statistical-sins-and-wrap-up",
+      "title": "Lecture 15: Statistical Sins and Wrap Up",
+      "kind": "video",
+      "description": "<p><strong>Description:</strong> Prof. Guttag continues the conversation about statistical fallacies and summarizes the take-aways of the course.</p>\n<p><strong>Instructor:</strong> John Guttag</p>\n",
+      "youtubeId": "iOZVbILaIZc",
+      "archiveUrl": "https://archive.org/download/MIT6.0002F16/MIT6_0002F16_lec15_300k.mp4",
+      "transcript": "16e9ec022f34566085e928bc713b36d2_iOZVbILaIZc.pdf",
+      "captions": [
+        {
+          "lang": "en",
+          "file": "483cefbc6af05afabbc6506e21f82e84_iOZVbILaIZc.vtt"
+        }
+      ],
+      "file": null,
+      "fileType": null,
+      "size": "104466517"
+    },
+    "c1lhuz6pzc0-2": {
+      "slug": "c1lhuz6pzc0-2",
+      "title": "3play caption file",
+      "kind": "file",
+      "description": "",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "663807dc409052db97795d0016d6ffe1_C1lhuz6pZC0.vtt",
+      "fileType": "application/x-subrip",
+      "size": 45648
+    },
+    "ps1": {
+      "slug": "ps1",
+      "title": "Problem Set 1: Space Cows Transportation",
+      "kind": "archive",
+      "description": "<p>This zip folder contains 1 .pdf file, 2 .txt files and 3 .py files.</p>\n",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "687c3ee2bee6229f46968d366a92345e_PS1.zip",
+      "fileType": "application/zip",
+      "size": 215574
+    },
+    "lecture-12-clustering": {
+      "slug": "lecture-12-clustering",
+      "title": "Lecture 12: Clustering",
+      "kind": "video",
+      "description": "<p><strong>Description:</strong> Prof. Guttag discusses clustering.</p>\n<p><strong>Instructor:</strong> John Guttag</p>\n",
+      "youtubeId": "esmzYhuFnds",
+      "archiveUrl": "https://archive.org/download/MIT6.0002F16/MIT6_0002F16_lec12_300k.mp4",
+      "transcript": "17feded894d842066364cd423ba4e007_esmzYhuFnds.pdf",
+      "captions": [
+        {
+          "lang": "en",
+          "file": "240dddf19b9f5c6ea248285541be53c7_esmzYhuFnds.vtt"
+        }
+      ],
+      "file": null,
+      "fileType": null,
+      "size": "118174074"
+    },
+    "mit6_0002f16_lec3": {
+      "slug": "mit6_0002f16_lec3",
+      "title": "Lecture 3: Graph-theoretic Models",
+      "kind": "pdf",
+      "description": "<p>This file contains the information regarding the Graph-theoretic Models.</p>\n",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "69b5b28067ecf1769a6143453d77eba1_MIT6_0002F16_lec3.pdf",
+      "fileType": "application/pdf",
+      "size": 1032822
+    },
+    "v_tulh374hw-1": {
+      "slug": "v_tulh374hw-1",
+      "title": "3play pdf file",
+      "kind": "pdf",
+      "description": "",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "6d7386392e8349068141a7c2df2dead9_V_TulH374hw.pdf",
+      "fileType": "application/pdf",
+      "size": 79974
+    },
+    "lecture-10-understanding-experimental-data-cont": {
+      "slug": "lecture-10-understanding-experimental-data-cont",
+      "title": "Lecture 10: Understanding Experimental Data (cont.)",
+      "kind": "video",
+      "description": "<p><strong>Description:</strong> Prof. Grimson continues on the topic of modeling experimental data.</p>\n<p><strong>Instructor:</strong> Eric Grimson</p>\n",
+      "youtubeId": "fQvg-hh9dUw",
+      "archiveUrl": "https://archive.org/download/MIT6.0002F16/MIT6_0002F16_lec10_300k.mp4",
+      "transcript": "1c4e5bac0a10ca11c56f2fbb8c61a493_fQvg-hh9dUw.pdf",
+      "captions": [
+        {
+          "lang": "en",
+          "file": "d3a31f30c86458e1bd60ae903e5bf219_fQvg-hh9dUw.vtt"
+        }
+      ],
+      "file": null,
+      "fileType": null,
+      "size": "116978326"
+    },
+    "h0e2haptgf4-2": {
+      "slug": "h0e2haptgf4-2",
+      "title": "3play caption file",
+      "kind": "file",
+      "description": "",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "7164106d893f546f85048b859c487883_h0e2HAPTGF4.vtt",
+      "fileType": "application/x-subrip",
+      "size": 91038
+    },
+    "p8918biv01c_captions": {
+      "slug": "p8918biv01c_captions",
+      "title": "MIT Programmer on GenAI, Growth Mindset, and Rubber Ducks? captions",
+      "kind": "video",
+      "description": "",
+      "youtubeId": "p8918BiV01c",
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "p8918BiV01c_captions.webvtt",
+      "fileType": "application/x-subrip",
+      "size": 72587
+    },
+    "mit6_0002f16_lec15": {
+      "slug": "mit6_0002f16_lec15",
+      "title": "Lecture 15",
+      "kind": "pdf",
+      "description": "<p>This file contains the information regarding statistical sins and wrap up.</p>\n",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "77d2977095e184f22da9bb75faf39535_MIT6_0002F16_lec15.pdf",
+      "fileType": "application/pdf",
+      "size": 1143732
+    },
+    "lect5": {
+      "slug": "lect5",
+      "title": "lect5.py",
+      "kind": "code",
+      "description": "<p>This file contain the information regarding code file for lecture 5.</p>\n",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "781613585ae543f26ad6dc040be4a312_lect5.py",
+      "fileType": "text/python-source",
+      "size": 8957
+    },
+    "lecture-8-sampling-and-standard-error": {
+      "slug": "lecture-8-sampling-and-standard-error",
+      "title": "Lecture 8: Sampling and Standard Error",
+      "kind": "video",
+      "description": "<p><strong>Description:</strong> Prof. Guttag discusses sampling and how to approach and analyze real data.</p>\n<p><strong>Instructor:</strong> John Guttag</p>\n",
+      "youtubeId": "soZv_KKax3E",
+      "archiveUrl": "https://archive.org/download/MIT6.0002F16/MIT6_0002F16_lec08_300k.mp4",
+      "transcript": "2b524c63c8236d001970e454a3707bf9_soZv_KKax3E.pdf",
+      "captions": [
+        {
+          "lang": "en",
+          "file": "4f622d3309645cefafc357f5151b33bc_soZv_KKax3E.vtt"
+        }
+      ],
+      "file": null,
+      "fileType": null,
+      "size": "108665585"
+    },
+    "-1bnxewhuok-1": {
+      "slug": "-1bnxewhuok-1",
+      "title": "3play pdf file",
+      "kind": "pdf",
+      "description": "",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "7adcba0777b9ae0161a8631ecf6d9060_-1BnXEwHUok.pdf",
+      "fileType": "application/pdf",
+      "size": 62110
+    },
+    "python-install": {
+      "slug": "python-install",
+      "title": "Python Installation Files",
+      "kind": "archive",
+      "description": "<p>This zip folder contains contains 1 .pdf file and 1 .py file.</p>\n",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "7f297f6433017c280e7ae981795aba30_python-install.zip",
+      "fileType": "application/zip",
+      "size": 695675
+    },
+    "ruxp7tm8-wo-2": {
+      "slug": "ruxp7tm8-wo-2",
+      "title": "3play caption file",
+      "kind": "file",
+      "description": "",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "80a64e43656053c7ab6c8a97bedddd4f_rUxP7TM8-wo.vtt",
+      "fileType": "application/x-subrip",
+      "size": 56300
+    },
+    "uk5yvoxnksk-2": {
+      "slug": "uk5yvoxnksk-2",
+      "title": "3play caption file",
+      "kind": "file",
+      "description": "",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "872b808a53775fef91a224c9097a4fd9_uK5yvoXnkSk.vtt",
+      "fileType": "application/x-subrip",
+      "size": 54158
+    },
+    "p8918biv01c_transcript": {
+      "slug": "p8918biv01c_transcript",
+      "title": "MIT Programmer on GenAI, Growth Mindset, and Rubber Ducks? transcript",
+      "kind": "video",
+      "description": "",
+      "youtubeId": "p8918BiV01c",
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "p8918BiV01c_transcript.pdf",
+      "fileType": "application/pdf",
+      "size": 70634
+    },
+    "ruxp7tm8-wo": {
+      "slug": "ruxp7tm8-wo",
+      "title": "3play caption file",
+      "kind": "file",
+      "description": "",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "8a5d0abd730ca2cd8c8743f17453569b_rUxP7TM8-wo.srt",
+      "fileType": "application/x-subrip",
+      "size": 59328
+    },
+    "-1bnxewhuok-2": {
+      "slug": "-1bnxewhuok-2",
+      "title": "3play caption file",
+      "kind": "file",
+      "description": "",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "8f30fbded7a45916bec11a59017feacf_-1BnXEwHUok.vtt",
+      "fileType": "application/x-subrip",
+      "size": 57450
+    },
+    "ps2": {
+      "slug": "ps2",
+      "title": "Problem Set 2: Fastest Way to Get Around MIT",
+      "kind": "archive",
+      "description": "<p>This zip folder contains 1 .pdf file, 1 .txt files and 2 .py files.</p>\n",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "a03ae7bf25e1cd1349fc81df23952509_PS2.zip",
+      "fileType": "application/zip",
+      "size": 720094
+    },
+    "additional-files-for-lecture-2": {
+      "slug": "additional-files-for-lecture-2",
+      "title": "Additional Files for Lecture 2",
+      "kind": "archive",
+      "description": "<p>This zip folder contains contains 1 .txt file and 1 .py file.</p>\n",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "a196805cfcdbe8096141a445b17b668d_Lecture2.zip",
+      "fileType": "application/zip",
+      "size": 1980
+    },
+    "eg8djywdmyg": {
+      "slug": "eg8djywdmyg",
+      "title": "3play caption file",
+      "kind": "file",
+      "description": "",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "a450e1da182557abd0a97d4a40a9a4be_eg8DJYwdMyg.srt",
+      "fileType": "application/x-subrip",
+      "size": 60916
+    },
+    "c1lhuz6pzc0": {
+      "slug": "c1lhuz6pzc0",
+      "title": "3play caption file",
+      "kind": "file",
+      "description": "",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "a5537cf841bbd153c799099f848024eb_C1lhuz6pZC0.srt",
+      "fileType": "application/x-subrip",
+      "size": 48056
+    },
+    "vifkgfl1cn8-2": {
+      "slug": "vifkgfl1cn8-2",
+      "title": "3play caption file",
+      "kind": "file",
+      "description": "",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "a6e9ee93bbf55d288d19d088237503e7_vIFKGFl1Cn8.vtt",
+      "fileType": "application/x-subrip",
+      "size": 77552
+    },
+    "mit6_0002f16_lec10": {
+      "slug": "mit6_0002f16_lec10",
+      "title": "Lecture 10: Understanding",
+      "kind": "pdf",
+      "description": "<p>This file contains the information regarding the Understanding Experimental Data.</p>\n",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "aa05d858752700adcf734b7cdb7a699f_MIT6_0002F16_lec10.pdf",
+      "fileType": "application/pdf",
+      "size": 1352716
+    },
+    "lecture-1-introduction-and-optimization-problems": {
+      "slug": "lecture-1-introduction-and-optimization-problems",
+      "title": "Lecture 1: Introduction and Optimization Problems",
+      "kind": "video",
+      "description": "<p><strong>Description:</strong> Prof. Guttag provides an overview of the course and discusses how we use computational models to understand the world in which we live, in particular he discusses the knapsack problem and greedy algoriths.</p>\n<p><strong>Instructor:</strong> John Guttag</p>\n",
+      "youtubeId": "C1lhuz6pZC0",
+      "archiveUrl": "https://archive.org/download/MIT6.0002F16/MIT6_0002F16_lec01_300k.mp4",
+      "transcript": "1a33a68ce69d3931e73e60bf586ec7f0_C1lhuz6pZC0.pdf",
+      "captions": [
+        {
+          "lang": "en",
+          "file": "663807dc409052db97795d0016d6ffe1_C1lhuz6pZC0.vtt"
+        }
+      ],
+      "file": null,
+      "fileType": null,
+      "size": "95621745"
+    },
+    "additional-files-for-lecture-9": {
+      "slug": "additional-files-for-lecture-9",
+      "title": "Additional Files for Lecture 9",
+      "kind": "archive",
+      "description": "<p>This zip folder contains 4 .txt files and 1 .py file.</p>\n",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "aff537b8ab26118a87a6e22e4bd0c4c8_Lecture9.zip",
+      "fileType": "application/zip",
+      "size": 2809
+    },
+    "uk5yvoxnksk": {
+      "slug": "uk5yvoxnksk",
+      "title": "3play caption file",
+      "kind": "file",
+      "description": "",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "b5d7f3595a06e98c9296f98453d9c264_uK5yvoXnkSk.srt",
+      "fileType": "application/x-subrip",
+      "size": 57038
+    },
+    "mit6_0002f16_lec14": {
+      "slug": "mit6_0002f16_lec14",
+      "title": "Lecture 14: Classification and Statistical Sins",
+      "kind": "pdf",
+      "description": "<p>This file contains the information regarding the Classification and Statistical Sins.</p>\n",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "b9d60f4ecb325e4648f9cf0379419338_MIT6_0002F16_lec14.pdf",
+      "fileType": "application/pdf",
+      "size": 830060
+    },
+    "h0e2haptgf4": {
+      "slug": "h0e2haptgf4",
+      "title": "3play caption file",
+      "kind": "file",
+      "description": "",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "c2f885e123057a7418c9b809ac137ae5_h0e2HAPTGF4.srt",
+      "fileType": "application/x-subrip",
+      "size": 96323
+    },
+    "k2sc-wpdt6k-2": {
+      "slug": "k2sc-wpdt6k-2",
+      "title": "3play caption file",
+      "kind": "file",
+      "description": "",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "c39bf448235e5ae09a089715e8c1ef18_K2SC-WPdT6k.vtt",
+      "fileType": "application/x-subrip",
+      "size": 58137
+    },
+    "h0e2haptgf4-1": {
+      "slug": "h0e2haptgf4-1",
+      "title": "3play pdf file",
+      "kind": "pdf",
+      "description": "",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "c74647368fed9529ffc97b943424233e_h0e2HAPTGF4.pdf",
+      "fileType": "application/pdf",
+      "size": 81152
+    },
+    "lecture1": {
+      "slug": "lecture1",
+      "title": "Additional Files for Lecture 1",
+      "kind": "archive",
+      "description": "<p>This zip folder contains contains 1 .txt file and 1 .py file.</p>\n",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "c8b48d3281310e0dcebcc590e8e4f564_Lecture1.zip",
+      "fileType": "application/zip",
+      "size": 1146
+    },
+    "eg8djywdmyg-1": {
+      "slug": "eg8djywdmyg-1",
+      "title": "3play pdf file",
+      "kind": "pdf",
+      "description": "",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "cb500110f0314c02ebb24dfc8d676f42_eg8DJYwdMyg.pdf",
+      "fileType": "application/pdf",
+      "size": 57919
+    },
+    "6-0002f16-th": {
+      "slug": "6-0002f16-th",
+      "title": "6-0002f16-th.jpg",
+      "kind": "image",
+      "description": "",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "cc10166a431e4c4c63bc37705d8a62a1_6-0002f16-th.jpg",
+      "fileType": "image/jpeg",
+      "size": 5785
+    },
+    "ps3": {
+      "slug": "ps3",
+      "title": "Problem Set 3: Robot Simulation",
+      "kind": "archive",
+      "description": "<p>This zip folder contains 1 .pdf file, 4 .pyc files and 4 .py files.</p>\n",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "ccc304c1ea4ee213b2846f1ec1fc01f8_PS3.zip",
+      "fileType": "application/zip",
+      "size": 271656
+    },
+    "lecturecodepy": {
+      "slug": "lecturecodepy",
+      "title": "lectureCode.py",
+      "kind": "code",
+      "description": "<p>This file contain the information regarding code file for lecture 11.</p>\n",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "cea07031a5c42a3bbb3d5f095255f380_lectureCode.py",
+      "fileType": "text/python-source",
+      "size": 3389
+    },
+    "lecture-9-understanding-experimental-data": {
+      "slug": "lecture-9-understanding-experimental-data",
+      "title": "Lecture 9: Understanding Experimental Data",
+      "kind": "video",
+      "description": "<p><strong>Description:</strong> Prof. Grimson talks about how to model experimental data in a way that gives a sense of the underlying mechanism and to predict behaviour in new settings.</p>\n<p><strong>Instructor:</strong> Eric Grimson</p>\n",
+      "youtubeId": "vIFKGFl1Cn8",
+      "archiveUrl": "https://archive.org/download/MIT6.0002F16/MIT6_0002F16_lec09_300k.mp4",
+      "transcript": "fd02a955348a2e08f706b6ce75ea8792_vIFKGFl1Cn8.pdf",
+      "captions": [
+        {
+          "lang": "en",
+          "file": "a6e9ee93bbf55d288d19d088237503e7_vIFKGFl1Cn8.vtt"
+        }
+      ],
+      "file": null,
+      "fileType": null,
+      "size": "109861558"
+    },
+    "k2sc-wpdt6k-1": {
+      "slug": "k2sc-wpdt6k-1",
+      "title": "3play pdf file",
+      "kind": "pdf",
+      "description": "",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "d131f5cfbd1c1234acef86bbbb1b9656_K2SC-WPdT6k.pdf",
+      "fileType": "application/pdf",
+      "size": 64497
+    },
+    "lect6py": {
+      "slug": "lect6py",
+      "title": "lect6.py",
+      "kind": "code",
+      "description": "<p>This file contain the information regarding code file for lecture 6.</p>\n",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "d257bb9444ccae314ffdd20dd0244f80_lect6.py",
+      "fileType": "text/python-source",
+      "size": 2954
+    },
+    "fqvg-hh9duw-2": {
+      "slug": "fqvg-hh9duw-2",
+      "title": "3play caption file",
+      "kind": "file",
+      "description": "",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "d3a31f30c86458e1bd60ae903e5bf219_fQvg-hh9dUw.vtt",
+      "fileType": "application/x-subrip",
+      "size": 82100
+    },
+    "lect7py": {
+      "slug": "lect7py",
+      "title": "lect7.py",
+      "kind": "code",
+      "description": "<p>This file contain the information regarding code file for lecture 7.</p>\n",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "d79b4abe3e8621d90d019ac02490d5ba_lect7.py",
+      "fileType": "text/python-source",
+      "size": 5337
+    },
+    "6wud_gp5wee": {
+      "slug": "6wud_gp5wee",
+      "title": "3play caption file",
+      "kind": "file",
+      "description": "",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "d7fc11232c514bdf9af1d9236ab4af4e_6wUD_gp5WeE.srt",
+      "fileType": "application/x-subrip",
+      "size": 61036
+    },
+    "ruxp7tm8-wo-1": {
+      "slug": "ruxp7tm8-wo-1",
+      "title": "3play pdf file",
+      "kind": "pdf",
+      "description": "",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "d909d24a4e993ab66ef7d70f065d4873_rUxP7TM8-wo.pdf",
+      "fileType": "application/pdf",
+      "size": 56362
+    },
+    "6-0002f16": {
+      "slug": "6-0002f16",
+      "title": "6-0002f16.jpg",
+      "kind": "image",
+      "description": "",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "d9b969b1e9e2029d7e9b9e2c9324dde4_6-0002f16.jpg",
+      "fileType": "image/jpeg",
+      "size": 34438
+    },
+    "additional-files-for-lecture-14": {
+      "slug": "additional-files-for-lecture-14",
+      "title": "Additional Files for Lecture 14",
+      "kind": "archive",
+      "description": "<p>This zip folder contains 1 .txt file and 1 .py file.</p>\n",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "dacdf4baac09f4da3f1a7c02c3b1238b_Lecture14.zip",
+      "fileType": "application/zip",
+      "size": 17164
+    },
+    "lecture4py": {
+      "slug": "lecture4py",
+      "title": "lecture4.py",
+      "kind": "code",
+      "description": "<p>This file contain the information regarding code file for lecture 4.</p>\n",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "db2474b48192b9a6ccb78c2e5bf75ca0_lecture4.py",
+      "fileType": "text/python-source",
+      "size": 1743
+    },
+    "lecture-11-introduction-to-machine-learning": {
+      "slug": "lecture-11-introduction-to-machine-learning",
+      "title": "Lecture 11: Introduction to Machine Learning",
+      "kind": "video",
+      "description": "<p><strong>Description:</strong> In this lecture, Prof. Guttag introduces machine learning and shows examples of supervised learning using feature vectors.</p>\n<p><strong>Instructor:</strong> Eric Grimson</p>\n",
+      "youtubeId": "h0e2HAPTGF4",
+      "archiveUrl": "https://archive.org/download/MIT6.0002F16/MIT6_0002F16_lec11_300k.mp4",
+      "transcript": "c74647368fed9529ffc97b943424233e_h0e2HAPTGF4.pdf",
+      "captions": [
+        {
+          "lang": "en",
+          "file": "7164106d893f546f85048b859c487883_h0e2HAPTGF4.vtt"
+        }
+      ],
+      "file": null,
+      "fileType": null,
+      "size": "120832563"
+    },
+    "vifkgfl1cn8": {
+      "slug": "vifkgfl1cn8",
+      "title": "3play caption file",
+      "kind": "file",
+      "description": "",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "de3dd67eeb5fb095f42c1edac0a071dd_vIFKGFl1Cn8.srt",
+      "fileType": "application/x-subrip",
+      "size": 81912
+    },
+    "additional-files-for-lecture-8": {
+      "slug": "additional-files-for-lecture-8",
+      "title": "Additional Files for Lecture 8",
+      "kind": "archive",
+      "description": "<p>This zip folder contains 1 .csv file and 1 .py file.</p>\n",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "dea3ddb72abd2f63a3859b92063bf0eb_Lecture8.zip",
+      "fileType": "application/zip",
+      "size": 1708693
+    },
+    "ogo1gpxsuzu": {
+      "slug": "ogo1gpxsuzu",
+      "title": "3play caption file",
+      "kind": "file",
+      "description": "",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "ed6ee2ae9abdeb19d62baa3992fbd38d_OgO1gpXSUzU.srt",
+      "fileType": "application/x-subrip",
+      "size": 63393
+    },
+    "fqvg-hh9duw": {
+      "slug": "fqvg-hh9duw",
+      "title": "3play caption file",
+      "kind": "file",
+      "description": "",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "ee3706ff214c8c5cb32a70cddb0d5744_fQvg-hh9dUw.srt",
+      "fileType": "application/x-subrip",
+      "size": 86775
+    },
+    "mit-programmer-on-genai-growth-mindset-and-rubber-ducks": {
+      "slug": "mit-programmer-on-genai-growth-mindset-and-rubber-ducks",
+      "title": "MIT Programmer on GenAI, Growth Mindset, and Rubber Ducks?",
+      "kind": "video",
+      "description": "<p>Learn about Python, growth mindset, and the uses of rubber ducks in this interview with MIT lecturer Ana Bell. Dr. Bell, who has been programming since she was twelve and now teaches popular introductory courses in computer science, says that coding consists of almost equal parts creativity and logic. The creative part, she explains, gets exercised particularly when you have to come up with an algorithm to solve a given problem, because for any given complex problem there are many possible approaches to tackling it. The logical part comes into play when you sit down to translate that algorithm into an unambiguous sequence of rules in a programming language, and again when you discover that the code you’ve written doesn’t work exactly as you intended it to and you have to set about debugging it. Among the topics the conversation addresses are why everyone–even in the age of generative AI– ought to study at least the basics of programming, why it can be useful to speak to an inanimate object when your coding project is stuck in the debugging stage, and how programming can help you choose your own adventure.</p>\n",
+      "youtubeId": "p8918BiV01c",
+      "archiveUrl": "https://archive.org/download/chalk-radio/S07E02_Ana_Bell_360p.mp4",
+      "transcript": "p8918BiV01c_transcript.pdf",
+      "captions": [
+        {
+          "lang": "en",
+          "file": "p8918BiV01c_captions.webvtt"
+        }
+      ],
+      "file": null,
+      "fileType": null,
+      "size": 69657764
+    },
+    "ps5": {
+      "slug": "ps5",
+      "title": "Problem Set 5: Modeling Global Warming",
+      "kind": "archive",
+      "description": "<p>This zip folder contains 1 .pdf file, 1 .csv file and 2 .py files.</p>\n",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "f5682c4bfaad90428a6e9fd82c66b27a_PS5.zip",
+      "fileType": "application/zip",
+      "size": 2460610
+    },
+    "ps4": {
+      "slug": "ps4",
+      "title": "Problem Set 4: Simulating the Spread of Disease and Bacteria Population",
+      "kind": "archive",
+      "description": "<p>This zip folder contains 1 .pdf file, 2 .py files.</p>\n",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "f6b48ebba57fc33e9cb7e815abf8f407_PS4.zip",
+      "fileType": "application/zip",
+      "size": 742265
+    },
+    "additional-files-for-lecture-13": {
+      "slug": "additional-files-for-lecture-13",
+      "title": "Additional Files for Lecture 13",
+      "kind": "archive",
+      "description": "<p>This zip folder contains 1 .txt file and 1 .py file.</p>\n",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "f6c99adcc562fc86761fa61928ac9710_Lecture13.zip",
+      "fileType": "application/zip",
+      "size": 18486
+    },
+    "additional-files-for-lecture-10": {
+      "slug": "additional-files-for-lecture-10",
+      "title": "Additional Files for Lecture 10",
+      "kind": "archive",
+      "description": "<p>This zip folder contains 1 .csv file, 7 .txt files and 2 .py files.</p>\n",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "fbec7c64c551758553ab3666af2c9baa_Lecture10.zip",
+      "fileType": "application/zip",
+      "size": 1733262
+    },
+    "vifkgfl1cn8-1": {
+      "slug": "vifkgfl1cn8-1",
+      "title": "3play pdf file",
+      "kind": "pdf",
+      "description": "",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "fd02a955348a2e08f706b6ce75ea8792_vIFKGFl1Cn8.pdf",
+      "fileType": "application/pdf",
+      "size": 70082
+    },
+    "mit6_0002f16_pythonresurcs": {
+      "slug": "mit6_0002f16_pythonresurcs",
+      "title": "Python Resources",
+      "kind": "pdf",
+      "description": "<p>This resource contains information regarding introduction to computational thinking and data science: Python resources.</p>\n",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "fe35c52e0a1b481f9775846d392e766d_MIT6_0002F16_PythonResurcs.pdf",
+      "fileType": "application/pdf",
+      "size": 207770
+    },
+    "lecture-5-random-walks": {
+      "slug": "lecture-5-random-walks",
+      "title": "Lecture 5: Random Walks",
+      "kind": "video",
+      "description": "<p><strong>Description:</strong> Prof. Guttag discusses how to build simulations and plot graphs in Python.</p>\n<p><strong>Instructor:</strong> John Guttag</p>\n",
+      "youtubeId": "6wUD_gp5WeE",
+      "archiveUrl": "https://archive.org/download/MIT6.0002F16/MIT6_0002F16_lec05_300k.mp4",
+      "transcript": "03bf169bf222218a135955bf39ee3b2e_6wUD_gp5WeE.pdf",
+      "captions": [
+        {
+          "lang": "en",
+          "file": "5044d4e030c55242ba24395be426ea82_6wUD_gp5WeE.vtt"
+        }
+      ],
+      "file": null,
+      "fileType": null,
+      "size": "114951163"
+    },
+    "eg8djywdmyg-2": {
+      "slug": "eg8djywdmyg-2",
+      "title": "3play caption file",
+      "kind": "file",
+      "description": "",
+      "youtubeId": null,
+      "archiveUrl": null,
+      "transcript": null,
+      "captions": [],
+      "file": "ff9a51abcbf85c0eba0a142bc9e4ec7d_eg8DJYwdMyg.vtt",
+      "fileType": "application/x-subrip",
+      "size": 57848
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "opencourse",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Offline mobile reader for MIT OpenCourseWare courses (Android, Capacitor).",
+  "scripts": {
+    "dev": "node tools/copy-pyodide.mjs && vite",
+    "prebuild": "node tools/copy-pyodide.mjs",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "import": "node tools/import-course.mjs",
+    "obsidian": "node tools/make-obsidian.mjs",
+    "cap:sync": "cap sync",
+    "cap:open": "cap open android",
+    "android": "npm run build && cap sync android && cap open android"
+  },
+  "dependencies": {
+    "@capacitor/android": "6.1.2",
+    "@capacitor/app": "6.0.1",
+    "@capacitor/core": "6.1.2",
+    "katex": "^0.16.11",
+    "pdfjs-dist": "4.4.168",
+    "pyodide": "^0.26.2",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "6.1.2",
+    "@types/katex": "^0.16.7",
+    "@types/react": "18.3.3",
+    "@types/react-dom": "18.3.0",
+    "@vitejs/plugin-react": "4.3.1",
+    "typescript": "5.5.4",
+    "vite": "5.4.2"
+  }
+}

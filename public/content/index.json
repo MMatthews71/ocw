@@ -1,0 +1,19 @@
+[
+  {
+    "id": "6-0002-fall-2016",
+    "title": "Introduction to Computational Thinking and Data Science",
+    "number": "6.0002",
+    "term": "Fall",
+    "year": "2016",
+    "image": "content/6-0002-fall-2016/files/d9b969b1e9e2029d7e9b9e2c9324dde4_6-0002f16.jpg",
+    "instructors": [
+      "Prof. Eric Grimson",
+      "Prof. John Guttag",
+      "Dr. Ana Bell"
+    ],
+    "topics": [
+      "Computer Science",
+      "Probability and Statistics"
+    ]
+  }
+]
