@@ -47,3 +47,21 @@ export function clearQuizProgress(key: string) {
     writeStore(s);
   }
 }
+
+// Clear ALL progress for a lesson: the lesson's own key (flat quizzes), plus
+// every sub-key under "<base>:…" (the per-question "<base>:qN", the "<base>:nav"
+// pager position, and any legacy "<base>:secN"). Used when a lesson is
+// regenerated so the fresh lesson starts with no carried-over answers. The ":"
+// boundary means clearing "c:1" never touches "c:10".
+export function clearQuizProgressTree(base: string) {
+  const s = readStore();
+  const prefix = base + ":";
+  let changed = false;
+  for (const k of Object.keys(s)) {
+    if (k === base || k.startsWith(prefix)) {
+      delete s[k];
+      changed = true;
+    }
+  }
+  if (changed) writeStore(s);
+}

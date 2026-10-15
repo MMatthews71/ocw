@@ -5,7 +5,7 @@ import { buildCombinedPrompt, buildSectionsPrompt, loadLessonTranscript, loadTim
 import { extractPdfBlocks, blocksToText } from "../lib/pdftext";
 import type { ProblemSet } from "../lib/problemset";
 import { clearProblemSet, getSavedProblemSet, parseCombined, parseSectioned, saveProblemSet } from "../lib/problemset";
-import { clearQuizProgress } from "../lib/quizprogress";
+import { clearQuizProgressTree } from "../lib/quizprogress";
 import { ProblemSetView } from "./ProblemSetView";
 import { SectionsView } from "./SectionsView";
 
@@ -138,9 +138,10 @@ export function PracticePanel({
 
   function regenerate() {
     clearProblemSet(course.id, lesson.n);
-    clearQuizProgress(baseKey);
-    clearQuizProgress(`${baseKey}:nav`);
-    (saved?.sections || []).forEach((_, i) => clearQuizProgress(`${baseKey}:sec${i}`));
+    // Wipe every stored answer for this lesson (flat quiz, each section
+    // question "<base>:qN", and the "<base>:nav" pager position) so the new
+    // lesson doesn't inherit the old one's answers.
+    clearQuizProgressTree(baseKey);
     setSaved(null);
     // Stay in "generate" mode: triedBundle is already true, so the bundled copy
     // (if any) won't reload over the fresh one the student is about to make.
