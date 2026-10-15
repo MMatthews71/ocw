@@ -10,6 +10,7 @@
     "build": "tsc -b && vite build",
     "preview": "vite preview",
     "import": "node tools/import-course.mjs",
+    "save-lessons": "node tools/save-lessons.mjs",
     "obsidian": "node tools/make-obsidian.mjs",
     "cap:sync": "cap sync",
     "cap:open": "cap open android",

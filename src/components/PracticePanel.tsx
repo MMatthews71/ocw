@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import type { CourseManifest, Lesson } from "../types";
+import { loadBundledLesson } from "../lib/content";
 import { buildCombinedPrompt, buildSectionsPrompt, loadLessonTranscript, loadTimestampedTranscript } from "../lib/enrich";
 import { extractPdfBlocks, blocksToText, extractPdfPageTexts } from "../lib/pdftext";
 import type { ProblemSet } from "../lib/problemset";
@@ -50,6 +51,30 @@ export function PracticePanel({
   onHasSections?: (b: boolean) => void;
 }) {
   const [saved, setSaved] = useState<ProblemSet | null>(() => getSavedProblemSet(course.id, lesson.n));
+  // Whether the shown lesson came from the app's bundled content (permanent)
+  // rather than this browser's localStorage.
+  const [fromBundle, setFromBundle] = useState(false);
+  // Have we finished checking for a permanently-bundled lesson? Until then we
+  // don't build the "generate it yourself" prompt, so a committed lesson shows
+  // immediately instead of flashing the generator. (The panel is keyed per
+  // lesson, so these run fresh for each lesson.)
+  const [triedBundle, setTriedBundle] = useState<boolean>(() => getSavedProblemSet(course.id, lesson.n) != null);
+
+  // No local copy → fall back to a lesson committed into the bundled content.
+  useEffect(() => {
+    if (triedBundle) return;
+    let cancelled = false;
+    loadBundledLesson(course.id, lesson.n).then((ps) => {
+      if (cancelled) return;
+      if (ps) {
+        setSaved(ps);
+        setFromBundle(true);
+      }
+      setTriedBundle(true);
+    });
+    return () => { cancelled = true; };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   // Tell the lesson whether this is a sectioned practice (so it can hide the
   // single top video — each section is a written lesson + quiz instead).
@@ -70,7 +95,7 @@ export function PracticePanel({
   // Build the prompt until a quiz is generated. Prefer the sectioned prompt when
   // a timestamped transcript is available.
   useEffect(() => {
-    if (saved) return;
+    if (saved || !triedBundle) return;
     let cancelled = false;
     setStatus("loading");
     (async () => {
@@ -106,7 +131,7 @@ export function PracticePanel({
     })();
     return () => { cancelled = true; };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [course.id, lesson.n, saved]);
+  }, [course.id, lesson.n, saved, triedBundle]);
 
   async function copy() {
     try {
@@ -147,10 +172,31 @@ export function PracticePanel({
     clearQuizProgress(`${baseKey}:nav`);
     (saved?.sections || []).forEach((_, i) => clearQuizProgress(`${baseKey}:sec${i}`));
     setSaved(null);
+    // Stay in "generate" mode: triedBundle is already true, so the bundled copy
+    // (if any) won't reload over the fresh one the student is about to make.
+    setFromBundle(false);
     setResponse("");
     setError(null);
     setPrompt("");
     setStatus("idle");
+  }
+
+  // Download this lesson as a JSON file to commit into the app's bundled
+  // content, so it ships with the app and is never lost (see tools/save-lessons.mjs).
+  // The payload carries the course id and lesson number so the tool knows where
+  // it belongs without parsing the filename.
+  function exportLesson() {
+    if (!saved) return;
+    const payload = { courseId: course.id, n: lesson.n, problemSet: saved };
+    const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = `${course.id}-lesson-${lesson.n}.json`;
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    URL.revokeObjectURL(url);
   }
 
   const hasSections = !!saved?.sections?.length;
@@ -167,9 +213,19 @@ export function PracticePanel({
             <ProblemSetView ps={saved} storageKey={baseKey} />
           )}
           <div className="btn-row" style={{ justifyContent: "center", paddingTop: 28 }}>
+            <button className="btn ghost" onClick={exportLesson}>
+              {fromBundle ? "Saved with the app ✓ · re-export" : "Save permanently ↓"}
+            </button>
             <button className="btn ghost" onClick={regenerate}>Regenerate practice</button>
           </div>
+          <p className="note" style={{ textAlign: "center", paddingTop: 2 }}>
+            {fromBundle
+              ? "This lesson ships with the app."
+              : "Downloads this lesson as JSON. Run npm run save-lessons on the file, then commit, to ship it with the app permanently."}
+          </p>
         </>
+      ) : !triedBundle ? (
+        <p className="note">Loading…</p>
       ) : (
         <>
           <div className="section-label" style={{ padding: "0 0 8px" }}>Step 1 — Get the prompt</div>
