@@ -44,6 +44,38 @@ dependencies {
 
 apply from: 'capacitor.build.gradle'
 
+// --- Auto-build the web app and copy it into the native project before every
+// Android build, so Android Studio's "Run ▶" always deploys the latest web code
+// (no need to remember `npm run build` + `cap sync` first). Opt out with
+// -PskipWebBuild (e.g. on a CI box with no Node, or to use the already-synced
+// assets). If Node/npm isn't on PATH, or the web build fails, this logs a
+// warning and the native build continues with the last-synced web assets rather
+// than failing outright.
+if (!project.hasProperty("skipWebBuild")) {
+    def isWindows = System.getProperty("os.name").toLowerCase().contains("windows")
+    def webRoot = file("${projectDir}/../..")
+
+    tasks.register("syncWebApp") {
+        doLast {
+            def result = exec {
+                workingDir webRoot
+                ignoreExitValue true
+                if (isWindows) {
+                    commandLine "cmd", "/c", "npm run build && npx cap copy android"
+                } else {
+                    commandLine "sh", "-c", "npm run build && npx cap copy android"
+                }
+            }
+            if (result.exitValue != 0) {
+                logger.warn("⚠ OpenCourse: web build/sync was skipped or failed (exit " +
+                    result.exitValue + "). Building with the last-synced web assets. " +
+                    "Run `npm run build && npx cap sync android` manually, or pass -PskipWebBuild to silence this.")
+            }
+        }
+    }
+    tasks.named("preBuild").configure { dependsOn "syncWebApp" }
+}
+
 try {
     def servicesJSON = file('google-services.json')
     if (servicesJSON.text) {
