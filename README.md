@@ -1,8 +1,13 @@
-# OpenCourse — offline MIT OpenCourseWare reader (Android)
+# OpenCourse — offline MIT OpenCourseWare reader (desktop + Android)
 
-A phone app for downloading MIT OpenCourseWare courses and learning them offline.
-Built as a web app (React + Vite) wrapped with **Capacitor** into a native Android
-app you open and run from **Android Studio**.
+An app for downloading MIT OpenCourseWare courses and learning them offline.
+Built as one web app (React + Vite) that ships two ways:
+
+- **Desktop program** (Windows / macOS / Linux) via **Electron** — where you build it out.
+- **Android phone app** via **Capacitor** — `npm run android` sends the same app to your phone.
+
+There is a single codebase in `src/`. Whatever you build and test on the desktop
+is exactly what goes to your phone.
 
 - 📚 **Library** of courses (a bookshelf you add to)
 - 🧭 **Lessons** mode — the course restructured into Lesson 1…N, each bundling that
@@ -41,7 +46,38 @@ Java/Android SDK used to build the APK — you don't need Java on your PATH.
 
 ---
 
-## Run it on your phone
+## Run it on your computer (desktop program)
+
+```bash
+npm run desktop:dev
+```
+
+Opens OpenCourse in a desktop window with **hot reload**: save a file in `src/`
+and the window updates instantly. DevTools open alongside it for debugging.
+Use **View → Phone-size window** (Ctrl/Cmd+Shift+P) to check how a screen will
+look on your phone, and **View → Desktop-size window** (Ctrl/Cmd+Shift+D) to go back.
+
+Other desktop commands:
+
+| Command | What it does |
+| --- | --- |
+| `npm run desktop` | Builds the app, then runs the production version in a window |
+| `npm run desktop:dist` | Builds an installer for the computer you run it on, into `release/` |
+
+`desktop:dist` on Windows makes `OpenCourse Setup 1.0.0.exe` (installer) and
+`OpenCourse 1.0.0.exe` (portable, no install). On a Mac it makes a `.dmg`, on Linux
+an `.AppImage`. Build each one on that kind of computer.
+
+> Progress, notes and problem sets are saved per device, so the desktop app and the
+> phone app each keep their own.
+
+The desktop shell lives in `electron/main.cjs`. It serves the built app from a
+fixed `app://opencourse` origin (so saved progress persists between launches),
+opens web links in your normal browser, and opens PDFs/code files in their own window.
+
+---
+
+## Send it to your phone
 
 ```bash
 npm run android
@@ -77,7 +113,8 @@ To build a shareable **APK** instead: Android Studio → *Build → Build Bundle
 3. Rebuild and redeploy:
 
    ```bash
-   npm run android
+   npm run desktop      # check it on your computer
+   npm run android      # then send it to your phone
    ```
 
 That's it — the new course appears on the bookshelf, fully offline.
@@ -104,6 +141,8 @@ src/
   lib/            content loading, hash router, progress
   components/     PdfViewer, CodeViewer, shared UI
   screens/        Library, Course, Section, Resource
+electron/main.cjs         # desktop (Electron) window + app:// file server
+tools/desktop-dev.mjs     # `npm run desktop:dev`: Vite dev server + Electron
 android/                  # generated Capacitor Android Studio project
 ```
 

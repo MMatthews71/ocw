@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "Offline mobile reader for MIT OpenCourseWare courses (Android, Capacitor).",
+  "description": "Offline reader for MIT OpenCourseWare courses (desktop via Electron, Android via Capacitor).",
   "scripts": {
     "dev": "node tools/copy-pyodide.mjs && vite",
     "prebuild": "node tools/copy-pyodide.mjs",
@@ -13,7 +13,10 @@
     "obsidian": "node tools/make-obsidian.mjs",
     "cap:sync": "cap sync",
     "cap:open": "cap open android",
-    "android": "npm run build && cap sync android && cap open android"
+    "android": "npm run build && cap sync android && cap open android",
+    "desktop:dev": "node tools/copy-pyodide.mjs && node tools/desktop-dev.mjs",
+    "desktop": "npm run build && electron .",
+    "desktop:dist": "npm run build && electron-builder"
   },
   "dependencies": {
     "@capacitor/android": "6.1.2",
@@ -31,7 +34,46 @@
     "@types/react": "18.3.3",
     "@types/react-dom": "18.3.0",
     "@vitejs/plugin-react": "4.3.1",
+    "electron": "44.11.3",
+    "electron-builder": "26.0.12",
     "typescript": "5.5.4",
     "vite": "5.4.2"
+  },
+  "main": "electron/main.cjs",
+  "author": "OpenCourse",
+  "build": {
+    "appId": "com.maxma.opencourse",
+    "productName": "OpenCourse",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "electron/**/*",
+      "package.json",
+      "!node_modules/**/*"
+    ],
+    "win": {
+      "target": [
+        "nsis",
+        "portable"
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    },
+    "mac": {
+      "target": [
+        "dmg"
+      ],
+      "category": "public.app-category.education"
+    },
+    "linux": {
+      "target": [
+        "AppImage"
+      ],
+      "category": "Education"
+    }
   }
 }
